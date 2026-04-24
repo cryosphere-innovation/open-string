@@ -12,7 +12,7 @@ Everything you need to build, flash, and deploy one is in this repo.
 | ------------ | ------------------------------------------------------------ |
 | `hardware/`  | KiCad project, schematic, PCB, Gerbers, BOM, fab-house notes |
 | `firmware/`  | Arduino sketch and libraries for the microcontroller         |
-| `docs/`      | Markdown (MDX) source for the OpenString website             |
+| `docs/`      | Markdown (MDX) source rendered on the Cryosphere docs site   |
 | `LICENSES/`  | Full text of each license used in the project                |
 | `LICENSE`    | Top-level license map                                        |
 
@@ -34,6 +34,19 @@ Summary:
 
 All three allow commercial use and require attribution. Derivative works
 must remain open under the same license.
+
+## How the docs are published
+
+The OpenString documentation lives at
+[cryosphereinnovation.com/docs](https://cryosphereinnovation.com/docs).
+That site fetches the MDX files in `docs/` directly from this repo at
+render time — pushes to `main` show up on the live site within a few
+minutes. No build, no submodule bump, no manual sync.
+
+`docs/manifest.json` is generated automatically by a GitHub Action
+(`.github/workflows/manifest.yml`) on every push that touches an MDX
+file. You don't need to edit it by hand — just add/edit `.mdx` files
+and push.
 
 ## Contributing
 
