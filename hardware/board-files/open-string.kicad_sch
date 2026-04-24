@@ -1,0 +1,5179 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "9227536e-74eb-4bfc-a9a5-b920c748900d")
+	(paper "A1")
+	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Sensor_Temperature:DS28EA00"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DS28EA00"
+				(at 6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+				(at -25.4 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+				(at -6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1-Wire Digital Thermometer with Sequence Detect and PIO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "1Wire OneWire Maxim Dallas"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MSOP*3x3mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DS28EA00_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "DS28EA00_1_1"
+				(pin bidirectional line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -10.16 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "PIOB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 10.16 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "PIOA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 403.86 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02e09b07-5d61-4990-9711-234527a4d04a")
+	)
+	(junction
+		(at 425.45 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c5679a7-4662-49c5-959d-ba58a264e001")
+	)
+	(junction
+		(at 101.6 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e05c97b-b832-4790-8e23-b8626eebef16")
+	)
+	(junction
+		(at 657.86 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1262495e-f008-4b0e-91ff-691217a79dc1")
+	)
+	(junction
+		(at 741.68 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1790f802-42f2-4c24-97f0-9b11780317e7")
+	)
+	(junction
+		(at 143.51 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "201b0ea3-619a-487d-a229-d08bdbd8eb29")
+	)
+	(junction
+		(at 740.41 267.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23f96bc2-cfa1-48b8-a455-912c8ef97e3a")
+	)
+	(junction
+		(at 276.86 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24714f64-fb4f-4920-8721-e4222bb6888b")
+	)
+	(junction
+		(at 111.76 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "250b025e-19b8-4879-a1e6-e64af3eabc51")
+	)
+	(junction
+		(at 657.86 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33e19a51-1605-4749-8b03-c7bd0912e728")
+	)
+	(junction
+		(at 143.51 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a527cae-ce3d-4218-acc4-4e71b46590aa")
+	)
+	(junction
+		(at 171.45 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b78fe6d-622b-40ec-b9b7-a0de2d594904")
+	)
+	(junction
+		(at 689.61 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d5bf179-9dc0-4373-9c4d-8d238f2bd37d")
+	)
+	(junction
+		(at 594.36 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40e87dac-a443-45f2-89ad-c7a88d91cbc1")
+	)
+	(junction
+		(at 181.61 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "497e9e95-f5dd-4ab0-9275-ac92135376ef")
+	)
+	(junction
+		(at 530.86 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ae32494-5326-486e-9b66-1341ed3f0aa2")
+	)
+	(junction
+		(at 340.36 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b9d8b6c-e41a-4695-b9c2-732e53dc3cdd")
+	)
+	(junction
+		(at 721.36 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f934e4e-e530-4cef-9357-d496ce05359c")
+	)
+	(junction
+		(at 679.45 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "518eaf76-2b93-47ec-8889-9929f295c988")
+	)
+	(junction
+		(at 372.11 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54127ecd-a9a3-4f53-b46b-2d31b9317d37")
+	)
+	(junction
+		(at 330.2 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "584b65b9-9319-4e4c-85ad-c35ea657e47a")
+	)
+	(junction
+		(at 435.61 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a15fc63-a558-4d12-bcee-6c3b4a470228")
+	)
+	(junction
+		(at 266.7 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a6f67c7-9311-49c7-b2e6-1f02ed2e1f32")
+	)
+	(junction
+		(at 721.36 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "669ce38e-b031-4260-9cc0-1f846be7632f")
+	)
+	(junction
+		(at 340.36 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66aefbc3-9bec-4b79-9045-921aead12a6f")
+	)
+	(junction
+		(at 584.2 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67536508-1188-4cec-a073-03ec3d48029f")
+	)
+	(junction
+		(at 361.95 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69e3d513-b6e5-4c29-8520-145fc98e7f47")
+	)
+	(junction
+		(at 64.77 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72102b27-4f28-4286-bd38-c170bef0f88d")
+	)
+	(junction
+		(at 213.36 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7347d282-cb9b-452d-a699-685c7a8d3097")
+	)
+	(junction
+		(at 499.11 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73c5025b-8edd-4b04-9f88-687cded0defc")
+	)
+	(junction
+		(at 181.61 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75d73983-341f-40d8-93a7-333308b5d258")
+	)
+	(junction
+		(at 530.86 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77524663-8015-4a5c-b656-7e9d00cfc680")
+	)
+	(junction
+		(at 73.66 267.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7992f9c2-a2bb-4218-adc7-994caa5ae7fc")
+	)
+	(junction
+		(at 276.86 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79d1f5d2-5b17-41d9-9572-3a6dde1be31a")
+	)
+	(junction
+		(at 745.49 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ca3a9d6-35df-4d25-9a1d-94a028ece8e6")
+	)
+	(junction
+		(at 711.2 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "885daa34-deff-42e1-9df8-04a81edd42f8")
+	)
+	(junction
+		(at 562.61 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a53aac2-44a0-495c-9432-1acd48847a8d")
+	)
+	(junction
+		(at 552.45 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f1b9a2a-24b4-4d4f-8134-37597a067c6f")
+	)
+	(junction
+		(at 203.2 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9269f3da-7e90-421a-863e-1dc790ecf26f")
+	)
+	(junction
+		(at 520.7 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92de361a-4b4b-45f5-930c-7c59054e4d43")
+	)
+	(junction
+		(at 435.61 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93ac3725-1b44-45fd-9ab9-10f56e41cf7c")
+	)
+	(junction
+		(at 308.61 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f96dfe4-5213-4b9d-842d-b87e9446cbdb")
+	)
+	(junction
+		(at 245.11 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a225bc59-dbcc-4390-9137-13a2ff36ef4c")
+	)
+	(junction
+		(at 73.66 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a37467d9-8da0-4d4a-a933-cbacd1453ce3")
+	)
+	(junction
+		(at 372.11 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3c5615a-ac3f-48c6-ab5d-26525cc050a8")
+	)
+	(junction
+		(at 499.11 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4c7c8bd-0e39-4d06-97b5-72d320ba1a39")
+	)
+	(junction
+		(at 626.11 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4f24dd9-b477-4a63-891a-61e628ca2eea")
+	)
+	(junction
+		(at 562.61 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a62be0af-48bd-427d-bf0e-2392be748657")
+	)
+	(junction
+		(at 647.7 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a710c46f-3b83-4333-a142-16c531b7ac9c")
+	)
+	(junction
+		(at 213.36 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2417a84-78c1-4626-b4bb-404fdedd3374")
+	)
+	(junction
+		(at 594.36 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4f31988-f198-4aba-94c2-4232f3416315")
+	)
+	(junction
+		(at 298.45 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9240953-63f8-4f83-be75-497c999bc6f0")
+	)
+	(junction
+		(at 245.11 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9dd4b6d-dda4-4d5a-b6e9-1200c38723fa")
+	)
+	(junction
+		(at 403.86 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba482103-7bca-4df4-a809-772d04ab793b")
+	)
+	(junction
+		(at 467.36 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3658861-638f-4841-bcdc-fe8ce32e49ff")
+	)
+	(junction
+		(at 488.95 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8869f90-f8b7-4726-88e2-7c9de8ea2cf0")
+	)
+	(junction
+		(at 234.95 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7ae7011-3601-423d-9695-12c049ad0c42")
+	)
+	(junction
+		(at 133.35 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e13f043e-dad8-4399-a7d3-83ab5a8c3dff")
+	)
+	(junction
+		(at 111.76 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e712a358-6b9a-4de2-8221-968dc223e6c1")
+	)
+	(junction
+		(at 393.7 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed9c318f-14b1-47f9-a984-68b4c194ab6d")
+	)
+	(junction
+		(at 689.61 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0a69410-d91f-4d01-9077-29200b83b47a")
+	)
+	(junction
+		(at 467.36 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f25998fe-c3e6-4172-91bb-d457d83122c2")
+	)
+	(junction
+		(at 457.2 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5278f89-1fec-4b9d-914b-633bbea557c4")
+	)
+	(junction
+		(at 741.68 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f82f07e9-42cc-4cc4-b990-464d1af99f05")
+	)
+	(junction
+		(at 626.11 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8720a5b-b013-44b1-a5bd-4639b637cbb8")
+	)
+	(junction
+		(at 308.61 279.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f95ad58b-d068-4d10-9d25-df0830e507b3")
+	)
+	(junction
+		(at 615.95 257.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fea479fd-a5f3-49df-905d-6d6de59c070b")
+	)
+	(junction
+		(at 64.77 265.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fed664fc-7414-4ba8-b4f2-8897e339ff38")
+	)
+	(wire
+		(pts
+			(xy 467.36 254) (xy 499.11 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "029ecd98-aacb-4933-a6a8-e75d0e0a7157")
+	)
+	(wire
+		(pts
+			(xy 742.95 257.81) (xy 742.95 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "031e3b78-0a5a-451c-abf4-ef70b8608db5")
+	)
+	(wire
+		(pts
+			(xy 530.86 274.32) (xy 530.86 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03a3597d-9bf5-49dc-b2b5-39e809dc2f57")
+	)
+	(wire
+		(pts
+			(xy 435.61 279.4) (xy 467.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04c8cf10-3b0d-4924-8ab8-2e04857e4cac")
+	)
+	(wire
+		(pts
+			(xy 572.77 269.24) (xy 584.2 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07d15311-6c58-4616-896f-8e7a7f73436e")
+	)
+	(wire
+		(pts
+			(xy 636.27 269.24) (xy 647.7 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0808587d-8b17-455e-be01-950cf9748dc2")
+	)
+	(wire
+		(pts
+			(xy 213.36 254) (xy 213.36 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "092b521a-e347-4971-b235-2a123a342fed")
+	)
+	(wire
+		(pts
+			(xy 143.51 274.32) (xy 143.51 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b396cd1-cf71-4862-94ed-043cd1e56d0d")
+	)
+	(wire
+		(pts
+			(xy 739.14 269.24) (xy 739.14 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c857ddb-68bf-42c1-ac06-9aaf017aa98c")
+	)
+	(wire
+		(pts
+			(xy 741.68 257.81) (xy 742.95 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dbd0046-6755-45bf-afda-98bc651b7a57")
+	)
+	(wire
+		(pts
+			(xy 562.61 254) (xy 594.36 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd49ced-6363-44b9-83d1-4141a1999a96")
+	)
+	(wire
+		(pts
+			(xy 340.36 279.4) (xy 372.11 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f43e7b4-dae3-4f23-9c01-f735852c6058")
+	)
+	(wire
+		(pts
+			(xy 133.35 257.81) (xy 133.35 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "146b8505-acc4-49dd-a8db-7f9f1312783f")
+	)
+	(wire
+		(pts
+			(xy 245.11 279.4) (xy 276.86 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15b3684e-02f6-40bf-9ef1-0afc303dc44a")
+	)
+	(wire
+		(pts
+			(xy 287.02 269.24) (xy 298.45 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "218823fd-4530-42b1-9229-8b3cf2c12bd5")
+	)
+	(wire
+		(pts
+			(xy 647.7 257.81) (xy 679.45 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24e31f84-491a-4eca-9f10-fd411b9cf98f")
+	)
+	(wire
+		(pts
+			(xy 203.2 257.81) (xy 234.95 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27359b7a-f5c7-4fb6-9e63-8c0a678bf578")
+	)
+	(wire
+		(pts
+			(xy 298.45 257.81) (xy 330.2 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b0173d5-ce8b-4a65-9aa6-458d416c1b09")
+	)
+	(wire
+		(pts
+			(xy 721.36 279.4) (xy 741.68 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d03ed1b-36f6-4a67-ae42-9231c08cf47c")
+	)
+	(wire
+		(pts
+			(xy 53.34 254) (xy 73.66 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e839bcd-0b84-4284-a7a6-1a487491f946")
+	)
+	(wire
+		(pts
+			(xy 245.11 254) (xy 276.86 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "301db01b-e8e7-4dc8-8732-ea0e97f7ce58")
+	)
+	(wire
+		(pts
+			(xy 552.45 257.81) (xy 552.45 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30215016-85de-43a1-b376-578f15b4eb8b")
+	)
+	(wire
+		(pts
+			(xy 745.49 254) (xy 746.76 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "319246fd-f5fe-45ff-b01b-97fb51a41a35")
+	)
+	(wire
+		(pts
+			(xy 739.14 267.97) (xy 740.41 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35b178bb-0c2f-4822-abb8-4a5a8d0f73c0")
+	)
+	(wire
+		(pts
+			(xy 91.44 267.97) (xy 91.44 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36067841-1ddd-48b4-af9d-320dfafa910e")
+	)
+	(wire
+		(pts
+			(xy 73.66 254) (xy 111.76 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b7d019-5dc5-4f18-b7bd-91e35c28f130")
+	)
+	(wire
+		(pts
+			(xy 266.7 257.81) (xy 298.45 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cc766fe-d8dd-4c3b-9137-cbc902b332da")
+	)
+	(wire
+		(pts
+			(xy 711.2 257.81) (xy 741.68 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e35d871-01c7-401a-8c51-44b501370fef")
+	)
+	(wire
+		(pts
+			(xy 746.76 279.4) (xy 746.76 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f044cbf-fc33-4bf0-a0d0-d05b200ab7ec")
+	)
+	(wire
+		(pts
+			(xy 647.7 257.81) (xy 647.7 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fe24c1d-0bf7-4309-8c60-b23601ff1b22")
+	)
+	(wire
+		(pts
+			(xy 276.86 254) (xy 308.61 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "401c936a-0991-4dcd-8232-2bcd5fbdd53f")
+	)
+	(wire
+		(pts
+			(xy 330.2 257.81) (xy 361.95 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "405f4be7-0ad8-4c74-8b97-bacaf7c12da6")
+	)
+	(wire
+		(pts
+			(xy 562.61 254) (xy 562.61 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "406274be-8ea3-409f-9eb1-c889eb82f3f0")
+	)
+	(wire
+		(pts
+			(xy 73.66 267.97) (xy 91.44 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41fb5bba-377b-46b8-b48f-df51a8a29c90")
+	)
+	(wire
+		(pts
+			(xy 746.76 270.51) (xy 749.3 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4274bf34-3a18-47b0-abf9-6b288fda10e1")
+	)
+	(wire
+		(pts
+			(xy 245.11 274.32) (xy 245.11 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4563bc42-07c3-425d-93d1-5ac7a964ae1c")
+	)
+	(wire
+		(pts
+			(xy 276.86 254) (xy 276.86 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "464f1f8c-3850-4711-ad7e-5df5b5c5a5cf")
+	)
+	(wire
+		(pts
+			(xy 340.36 274.32) (xy 340.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a772d76-3b94-46e7-82b0-438caf4ce6de")
+	)
+	(wire
+		(pts
+			(xy 245.11 254) (xy 245.11 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ab7c021-ed3c-43a3-b2e1-fb9d09d119ff")
+	)
+	(wire
+		(pts
+			(xy 457.2 257.81) (xy 457.2 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ae6f00b-52ca-4383-9481-c0d94a98a95c")
+	)
+	(wire
+		(pts
+			(xy 53.34 254) (xy 53.34 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b8b2769-b2fd-4643-b36c-58126c6bbcba")
+	)
+	(wire
+		(pts
+			(xy 467.36 279.4) (xy 499.11 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d263bbf-4e11-4d9c-88f2-221163d4c2ed")
+	)
+	(wire
+		(pts
+			(xy 50.8 265.43) (xy 64.77 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea5ab34-64bd-4521-b237-e962339b64d4")
+	)
+	(wire
+		(pts
+			(xy 64.77 279.4) (xy 111.76 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ed1b718-87a9-45c1-8db3-f8ab37198509")
+	)
+	(wire
+		(pts
+			(xy 372.11 274.32) (xy 372.11 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f20d57e-f555-49a8-abf4-400de3e39940")
+	)
+	(wire
+		(pts
+			(xy 657.86 279.4) (xy 689.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fb81405-35da-4c3d-ba2b-32dc93dc4af4")
+	)
+	(wire
+		(pts
+			(xy 604.52 269.24) (xy 615.95 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50c78318-d904-43d4-924a-bb0ca96c5a7f")
+	)
+	(wire
+		(pts
+			(xy 403.86 274.32) (xy 403.86 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51612125-0efc-47c3-819d-d24b0b5586f8")
+	)
+	(wire
+		(pts
+			(xy 740.41 267.97) (xy 749.3 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5306ebdc-8174-4946-85d0-49e90949fe09")
+	)
+	(wire
+		(pts
+			(xy 488.95 257.81) (xy 520.7 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "547dc38c-0dd4-4edf-a1ee-74c8c9fc02a3")
+	)
+	(wire
+		(pts
+			(xy 742.95 265.43) (xy 749.3 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54c46f3a-abea-4a23-ba33-1194f818afe6")
+	)
+	(wire
+		(pts
+			(xy 731.52 269.24) (xy 739.14 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5555d999-e8a6-470e-ade0-96763ab7bcd1")
+	)
+	(wire
+		(pts
+			(xy 308.61 254) (xy 308.61 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5606d3d1-be12-4e96-8cf0-69ad6dce2afa")
+	)
+	(wire
+		(pts
+			(xy 435.61 254) (xy 435.61 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57558811-677b-412a-b7ec-2df6fb113353")
+	)
+	(wire
+		(pts
+			(xy 414.02 269.24) (xy 425.45 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59546a17-b888-495e-b8c0-1fd29314a3b6")
+	)
+	(wire
+		(pts
+			(xy 318.77 269.24) (xy 330.2 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ab64308-6daf-4a9a-ab9f-0d1cbab9d021")
+	)
+	(wire
+		(pts
+			(xy 403.86 254) (xy 435.61 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b895852-9b67-43d6-8bc5-9af531878242")
+	)
+	(wire
+		(pts
+			(xy 657.86 274.32) (xy 657.86 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c3c716d-0913-4281-92a7-e850d0574582")
+	)
+	(wire
+		(pts
+			(xy 509.27 269.24) (xy 520.7 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fae7313-6d88-43fd-9b0f-c6e64a1d8630")
+	)
+	(wire
+		(pts
+			(xy 541.02 269.24) (xy 552.45 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fcce512-ad6b-44ee-a633-4fad4e6858d2")
+	)
+	(wire
+		(pts
+			(xy 746.76 262.89) (xy 749.3 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "612cda07-fc06-4cda-9560-249d026d9cd7")
+	)
+	(wire
+		(pts
+			(xy 457.2 257.81) (xy 488.95 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6147a124-f1eb-495c-923b-eee0f9ed80a6")
+	)
+	(wire
+		(pts
+			(xy 91.44 264.16) (xy 91.44 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6274e2b6-e0f6-4ac6-b011-e078cfd4ad3d")
+	)
+	(wire
+		(pts
+			(xy 403.86 254) (xy 403.86 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63b93701-28b2-48e0-a2a6-dc57253da871")
+	)
+	(wire
+		(pts
+			(xy 101.6 264.16) (xy 101.6 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66a33751-feea-4a49-97c1-ca91d3f02c26")
+	)
+	(wire
+		(pts
+			(xy 143.51 254) (xy 143.51 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6789069d-bee9-465d-8cba-7888b90b816e")
+	)
+	(wire
+		(pts
+			(xy 741.68 279.4) (xy 746.76 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6830ae2c-8db2-462a-919e-29873a97a182")
+	)
+	(wire
+		(pts
+			(xy 467.36 274.32) (xy 467.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "689dc618-0a8f-43c4-83bc-e718e39a7919")
+	)
+	(wire
+		(pts
+			(xy 626.11 279.4) (xy 657.86 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69db8bfb-f70e-444a-9353-6f49e440c11a")
+	)
+	(wire
+		(pts
+			(xy 552.45 257.81) (xy 584.2 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c57b2f8-be70-4479-a157-b8d4ad95f156")
+	)
+	(wire
+		(pts
+			(xy 425.45 257.81) (xy 425.45 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c78992a-09ed-4a25-9d05-dc285f325b3d")
+	)
+	(wire
+		(pts
+			(xy 91.44 269.24) (xy 101.6 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e21c952-36e4-4564-8cbc-89341608873c")
+	)
+	(wire
+		(pts
+			(xy 171.45 257.81) (xy 203.2 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f4740f0-7425-4e67-9edd-4b1e423c161d")
+	)
+	(wire
+		(pts
+			(xy 276.86 279.4) (xy 308.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f7d2773-ee2d-4333-936d-75bfed166d10")
+	)
+	(wire
+		(pts
+			(xy 266.7 257.81) (xy 266.7 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fa9030f-8c88-4ffd-9e8a-57318d35c674")
+	)
+	(wire
+		(pts
+			(xy 626.11 254) (xy 626.11 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72c63235-bd48-4b59-a305-ae6aff853743")
+	)
+	(wire
+		(pts
+			(xy 181.61 254) (xy 213.36 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72dbc32f-638f-4e7e-9436-187b6d706d38")
+	)
+	(wire
+		(pts
+			(xy 668.02 269.24) (xy 679.45 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73e64e99-7a7f-4fcd-85a5-66e02898c888")
+	)
+	(wire
+		(pts
+			(xy 499.11 279.4) (xy 530.86 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74b91be9-956b-483a-ad18-3a743851e3ad")
+	)
+	(wire
+		(pts
+			(xy 721.36 254) (xy 721.36 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "767797ff-751d-4cb2-8826-c7add0d5225a")
+	)
+	(wire
+		(pts
+			(xy 403.86 279.4) (xy 435.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b22a529-2dc2-46d5-b217-8a7da21da757")
+	)
+	(wire
+		(pts
+			(xy 191.77 269.24) (xy 203.2 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b4f9241-44cf-4bf6-a16c-4c99ebce8bae")
+	)
+	(wire
+		(pts
+			(xy 181.61 254) (xy 181.61 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ccab2e9-f327-4952-bb75-a3431367dab5")
+	)
+	(wire
+		(pts
+			(xy 181.61 279.4) (xy 213.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ccd4f2d-d333-4c19-9d5b-11a9d7d2abb1")
+	)
+	(wire
+		(pts
+			(xy 213.36 279.4) (xy 245.11 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e3d3c3d-809b-4b6d-b6f6-62164ccec72d")
+	)
+	(wire
+		(pts
+			(xy 445.77 269.24) (xy 457.2 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f67f5bf-df89-4087-aa6a-14693dac5f08")
+	)
+	(wire
+		(pts
+			(xy 425.45 257.81) (xy 457.2 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80b7a367-7c96-4d60-b1d0-67b19bf3f8a0")
+	)
+	(wire
+		(pts
+			(xy 308.61 279.4) (xy 340.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "819b356f-9130-472f-8310-0f63520d0d3e")
+	)
+	(wire
+		(pts
+			(xy 689.61 274.32) (xy 689.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82be7417-83cd-4635-920a-af243f8e413b")
+	)
+	(wire
+		(pts
+			(xy 746.76 254) (xy 746.76 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82cea6dd-1fdf-45ef-8a61-73a63e3fb931")
+	)
+	(wire
+		(pts
+			(xy 594.36 254) (xy 626.11 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83bc17fe-25ec-4f35-b691-523f86b7e572")
+	)
+	(wire
+		(pts
+			(xy 435.61 254) (xy 467.36 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843c8d4e-a3f8-4011-8c43-72797e142196")
+	)
+	(wire
+		(pts
+			(xy 143.51 254) (xy 181.61 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84fb1912-785f-4516-8f64-b363ddba8ffb")
+	)
+	(wire
+		(pts
+			(xy 153.67 269.24) (xy 171.45 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86d4af24-8a3f-4b4f-bbf7-af3a34a0ea82")
+	)
+	(wire
+		(pts
+			(xy 594.36 279.4) (xy 626.11 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8915c3d1-cc2e-4122-bac2-9215a80a18f7")
+	)
+	(wire
+		(pts
+			(xy 64.77 265.43) (xy 91.44 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cd22845-f85b-4eed-b348-c25509fa31b7")
+	)
+	(wire
+		(pts
+			(xy 372.11 279.4) (xy 403.86 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f57ee50-bed7-4714-b7ed-a6b1968eb59d")
+	)
+	(wire
+		(pts
+			(xy 530.86 254) (xy 562.61 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91388fa1-ac06-4fc0-b7ee-26e18117e4e9")
+	)
+	(wire
+		(pts
+			(xy 382.27 269.24) (xy 393.7 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91c5e5d7-e3ee-4af0-aab0-470e6f597589")
+	)
+	(wire
+		(pts
+			(xy 689.61 279.4) (xy 721.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9344f07e-f082-45ab-a5b9-eb371dee03dd")
+	)
+	(wire
+		(pts
+			(xy 467.36 254) (xy 467.36 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94d2cb23-fd62-4e25-bfed-0fb4a691a24c")
+	)
+	(wire
+		(pts
+			(xy 393.7 257.81) (xy 425.45 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95682349-37ae-4673-9bea-b0cbe0ab2321")
+	)
+	(wire
+		(pts
+			(xy 203.2 257.81) (xy 203.2 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9580a13b-765c-4a9f-af19-6d16c3ddd5b2")
+	)
+	(wire
+		(pts
+			(xy 393.7 257.81) (xy 393.7 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9656f409-e916-499b-acb5-4f793b516d64")
+	)
+	(wire
+		(pts
+			(xy 499.11 254) (xy 530.86 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96b6a176-4a6c-4aba-9a1f-87b00cb46dc5")
+	)
+	(wire
+		(pts
+			(xy 626.11 254) (xy 657.86 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a75576-ecc0-4491-81ec-512d0bba8019")
+	)
+	(wire
+		(pts
+			(xy 626.11 274.32) (xy 626.11 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b04ebf4-6e5f-4800-b879-ef0c0d1083eb")
+	)
+	(wire
+		(pts
+			(xy 53.34 279.4) (xy 64.77 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c7a0b07-2672-4010-b7c5-aed453e8443f")
+	)
+	(wire
+		(pts
+			(xy 50.8 270.51) (xy 53.34 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ccae4b9-be1d-4150-a864-ca40c2772abf")
+	)
+	(wire
+		(pts
+			(xy 499.11 274.32) (xy 499.11 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9df1ecd4-4c99-4bf8-b757-d672f6813e4c")
+	)
+	(wire
+		(pts
+			(xy 530.86 254) (xy 530.86 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eaa4e03-561e-4af6-8734-08285c6074ea")
+	)
+	(wire
+		(pts
+			(xy 679.45 257.81) (xy 711.2 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0cbbb9c-f428-474f-88ab-8d3a5f594b52")
+	)
+	(wire
+		(pts
+			(xy 111.76 274.32) (xy 111.76 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a135f9c0-1229-44e6-8485-94373c36619c")
+	)
+	(wire
+		(pts
+			(xy 330.2 257.81) (xy 330.2 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a28a71fa-1302-4c2c-996d-aa34db234859")
+	)
+	(wire
+		(pts
+			(xy 213.36 254) (xy 245.11 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3710286-107d-4e98-9484-4860f890ddcb")
+	)
+	(wire
+		(pts
+			(xy 721.36 254) (xy 745.49 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8c51eaa-39bf-47ba-8717-dfa93cb0505b")
+	)
+	(wire
+		(pts
+			(xy 520.7 257.81) (xy 520.7 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa91c7e9-e462-4f4a-8d5b-0cf1ca8525ce")
+	)
+	(wire
+		(pts
+			(xy 584.2 257.81) (xy 615.95 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aade6d8e-a62f-4525-8448-5d24515707f6")
+	)
+	(wire
+		(pts
+			(xy 340.36 254) (xy 372.11 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac98ba6e-95be-423f-a47f-0e29ddbeda27")
+	)
+	(wire
+		(pts
+			(xy 711.2 257.81) (xy 711.2 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acfc544c-9590-457c-9955-e9363074fe0d")
+	)
+	(wire
+		(pts
+			(xy 615.95 257.81) (xy 615.95 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad6f6c40-56a3-4dc3-9b66-5e100e249944")
+	)
+	(wire
+		(pts
+			(xy 111.76 279.4) (xy 143.51 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae9c8a8a-41ba-4a98-9f5f-769ee1eaf39a")
+	)
+	(wire
+		(pts
+			(xy 213.36 274.32) (xy 213.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aea9c819-73d0-4d1a-acfe-008c655a8487")
+	)
+	(wire
+		(pts
+			(xy 121.92 269.24) (xy 133.35 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af72d159-4007-4a14-b361-70f16d509626")
+	)
+	(wire
+		(pts
+			(xy 721.36 274.32) (xy 721.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0072652-9d89-419c-a488-14c425547585")
+	)
+	(wire
+		(pts
+			(xy 488.95 257.81) (xy 488.95 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1c9164c-5b7e-4f35-a8e1-db6d64acfbfd")
+	)
+	(wire
+		(pts
+			(xy 584.2 257.81) (xy 584.2 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b39c45ca-946e-49cf-b4e2-f7f855908d8f")
+	)
+	(wire
+		(pts
+			(xy 594.36 254) (xy 594.36 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b45fc663-3d00-41d1-940a-cb9ff605e1a8")
+	)
+	(wire
+		(pts
+			(xy 372.11 254) (xy 403.86 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5cb8a38-38d9-432c-b074-9061f56916ca")
+	)
+	(wire
+		(pts
+			(xy 679.45 257.81) (xy 679.45 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b731e415-347f-4fb6-a7c5-e3f56ee97751")
+	)
+	(wire
+		(pts
+			(xy 562.61 274.32) (xy 562.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "babb0aee-9229-4466-855a-c8b6c82e2b24")
+	)
+	(wire
+		(pts
+			(xy 50.8 262.89) (xy 53.34 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb4de52c-c25c-4b36-9eba-fe760ee8a71b")
+	)
+	(wire
+		(pts
+			(xy 372.11 254) (xy 372.11 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc27e260-1805-4eec-acb3-de5977b83829")
+	)
+	(wire
+		(pts
+			(xy 657.86 254) (xy 689.61 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bed84f84-2f9d-418e-8862-edb9c9f40ce1")
+	)
+	(wire
+		(pts
+			(xy 689.61 254) (xy 721.36 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e6df9e-5b38-4c4c-8c39-f7d07dbb31b2")
+	)
+	(wire
+		(pts
+			(xy 133.35 257.81) (xy 171.45 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c63c5ff5-bc51-4b60-a14a-43975b88364f")
+	)
+	(wire
+		(pts
+			(xy 435.61 274.32) (xy 435.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b2ff9d-1146-4f77-a701-81aa93c54e11")
+	)
+	(wire
+		(pts
+			(xy 361.95 257.81) (xy 393.7 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9aee7ca-467c-4cd6-82f6-4929a79ea7dd")
+	)
+	(wire
+		(pts
+			(xy 530.86 279.4) (xy 562.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc2ad6bb-f3b9-4d1b-b52d-9da4dcbb3378")
+	)
+	(wire
+		(pts
+			(xy 350.52 269.24) (xy 361.95 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccefa63b-ec39-40ad-b843-877224d6c803")
+	)
+	(wire
+		(pts
+			(xy 50.8 267.97) (xy 73.66 267.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccf8d252-fdf2-4379-bdfe-29786e02adb2")
+	)
+	(wire
+		(pts
+			(xy 276.86 274.32) (xy 276.86 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd9cecda-701f-4268-8631-c8f9beec08dd")
+	)
+	(wire
+		(pts
+			(xy 361.95 257.81) (xy 361.95 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d17ea876-6f58-4ba4-a27f-30c418c13ab6")
+	)
+	(wire
+		(pts
+			(xy 308.61 274.32) (xy 308.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5eff172-bbe4-4ac9-9b36-1603e0998a88")
+	)
+	(wire
+		(pts
+			(xy 91.44 264.16) (xy 101.6 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74a28fd-22d8-4e92-9d7d-29413a0db1c1")
+	)
+	(wire
+		(pts
+			(xy 111.76 254) (xy 111.76 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74bbe16-f663-44d0-891b-dd0b8274e518")
+	)
+	(wire
+		(pts
+			(xy 298.45 257.81) (xy 298.45 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81cfd51-3589-4548-bdd5-b88448c3a264")
+	)
+	(wire
+		(pts
+			(xy 234.95 257.81) (xy 234.95 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d98dc78f-a822-4229-ac0b-2fbfb6d6e546")
+	)
+	(wire
+		(pts
+			(xy 594.36 274.32) (xy 594.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df63f814-5a55-4921-a12c-da41fde71837")
+	)
+	(wire
+		(pts
+			(xy 657.86 254) (xy 657.86 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e065082a-7d98-4160-a708-8d05484ae83b")
+	)
+	(wire
+		(pts
+			(xy 477.52 269.24) (xy 488.95 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e09e4b78-84cc-4904-81af-26b25ccec589")
+	)
+	(wire
+		(pts
+			(xy 699.77 269.24) (xy 711.2 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e21898a3-031e-4741-850c-7639437ad223")
+	)
+	(wire
+		(pts
+			(xy 181.61 274.32) (xy 181.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5462b65-70eb-4c43-8dcf-5a9e52fc59e7")
+	)
+	(wire
+		(pts
+			(xy 255.27 269.24) (xy 266.7 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6c76e9e-23d6-401a-b254-a523f12c845f")
+	)
+	(wire
+		(pts
+			(xy 101.6 257.81) (xy 133.35 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6e8acf4-5174-47ba-bb2b-a30a4c875471")
+	)
+	(wire
+		(pts
+			(xy 520.7 257.81) (xy 552.45 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e82730ec-830c-4307-b962-9e9d48633fc7")
+	)
+	(wire
+		(pts
+			(xy 499.11 254) (xy 499.11 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba37126-795c-475a-8c6d-9e859da6829a")
+	)
+	(wire
+		(pts
+			(xy 53.34 270.51) (xy 53.34 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec9bf370-2a82-47e3-a570-24f6c65c60fc")
+	)
+	(wire
+		(pts
+			(xy 340.36 254) (xy 340.36 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee825d67-8412-4865-9009-0be088009a89")
+	)
+	(wire
+		(pts
+			(xy 615.95 257.81) (xy 647.7 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eede68b0-6e13-4e24-9cdb-de961d04b96b")
+	)
+	(wire
+		(pts
+			(xy 171.45 257.81) (xy 171.45 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef04830c-881d-4599-977e-7f1eb24c9aa7")
+	)
+	(wire
+		(pts
+			(xy 689.61 254) (xy 689.61 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5aa19a9-1853-476c-80b9-088d7e8286cb")
+	)
+	(wire
+		(pts
+			(xy 223.52 269.24) (xy 234.95 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6210940-f420-4467-a6cb-10c1882fbe29")
+	)
+	(wire
+		(pts
+			(xy 308.61 254) (xy 340.36 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8277f28-8703-498a-9891-20d35c5b5ca7")
+	)
+	(wire
+		(pts
+			(xy 234.95 257.81) (xy 266.7 257.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fae6ef91-484e-428f-9316-38c6c25d274b")
+	)
+	(wire
+		(pts
+			(xy 143.51 279.4) (xy 181.61 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcb6df88-b77c-401b-9a5a-e733b800645b")
+	)
+	(wire
+		(pts
+			(xy 111.76 254) (xy 143.51 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff52cf06-e97d-47b9-8f4d-3b6b68a9ce14")
+	)
+	(wire
+		(pts
+			(xy 562.61 279.4) (xy 594.36 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8996ae-3910-488a-9a85-d64003ae3d10")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 73.66 267.97 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "006135f1-25b0-4da3-9e83-7abc0f5618f7")
+		(property "Reference" "TP4"
+			(at 76.2 270.0019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PIOA/B"
+			(at 76.2 272.5419 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 68.58 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6ac4dfd3-2ac0-4bf5-b4c8-b6edf478d3cd")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 64.77 279.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b23663d-abb8-4f1b-829a-fcab5fc95968")
+		(property "Reference" "TP2"
+			(at 67.31 274.8279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 277.3679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 69.85 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 64.77 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07dd487a-2cb0-41e3-91ba-771d3ceac6e3")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 626.11 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21fe35b9-ff36-4311-8d7c-cdf5f6c99dec")
+		(property "Reference" "U17"
+			(at 640.08 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 640.08 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 600.71 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 619.76 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 626.11 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "52313b52-6263-4557-9854-d0da5e82a42d")
+		)
+		(pin "2"
+			(uuid "c5f2d053-cc5a-4a92-b37a-70935ef25e62")
+		)
+		(pin "3"
+			(uuid "aa0a97cf-f1d0-42c3-9e3e-688953efe45e")
+		)
+		(pin "4"
+			(uuid "baf7b880-203d-400b-a2e7-b82e86c229eb")
+		)
+		(pin "5"
+			(uuid "59c91645-1c23-4f28-8f3f-1a56ce030151")
+		)
+		(pin "6"
+			(uuid "d6260a53-b22d-4e47-b994-134b1350e076")
+		)
+		(pin "7"
+			(uuid "af63222f-2ed4-473f-a982-4e5765b95a38")
+		)
+		(pin "8"
+			(uuid "7f7d7901-8e26-4eef-9b4d-3c80b874bab1")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 308.61 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a8d4c0c-9d50-41f7-8e62-f408f2c8f8d0")
+		(property "Reference" "U7"
+			(at 322.58 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 322.58 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 283.21 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 302.26 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 308.61 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "220c9528-50b7-4030-9c28-f8a92aeb7aa6")
+		)
+		(pin "2"
+			(uuid "a2735148-486c-4067-8164-53d0a7b03415")
+		)
+		(pin "3"
+			(uuid "1a4ed93f-5c96-4ad2-aa23-38b226db2b06")
+		)
+		(pin "4"
+			(uuid "4b309074-90d5-4b13-a9e1-f2ad0bc53236")
+		)
+		(pin "5"
+			(uuid "d0a788aa-d48a-4bbd-b2eb-69163bb96749")
+		)
+		(pin "6"
+			(uuid "9ac9bcfd-136f-4926-bc82-4b90f5f4b7cd")
+		)
+		(pin "7"
+			(uuid "6513e492-7825-481b-a1bc-456bfd8f39f8")
+		)
+		(pin "8"
+			(uuid "f9133fe2-4c00-46b7-b0c7-04fd28e09831")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 270.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2b463da8-4df2-4f7d-ba7a-423f35f2693b")
+		(property "Reference" "GND1"
+			(at 35.56 270.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 270.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 50.8 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47140135-01a8-4c9c-82cb-8527ee9ce7d9")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "GND1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 64.77 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38079bae-c6c3-4503-a8d3-3119fe1052be")
+		(property "Reference" "TP1"
+			(at 67.31 260.8579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Data"
+			(at 67.31 263.3979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 69.85 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 64.77 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85efcac8-f977-4491-9dee-c2b49f137422")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 403.86 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d61bea5-cd99-49b2-a73b-d3d715b735a9")
+		(property "Reference" "U10"
+			(at 417.83 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 417.83 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 378.46 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 397.51 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 403.86 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "37415822-64db-42aa-93a1-7be19bcd48de")
+		)
+		(pin "2"
+			(uuid "59307426-b4ba-4070-a1e5-032ee7d29336")
+		)
+		(pin "3"
+			(uuid "656618fb-934e-43eb-9a54-1a29dfdf29a9")
+		)
+		(pin "4"
+			(uuid "6d34741d-8b4e-4d53-9380-afe1a886e4e3")
+		)
+		(pin "5"
+			(uuid "4126191c-671f-402f-8b1b-2437d2499afc")
+		)
+		(pin "6"
+			(uuid "6b6cbb1a-db1a-41d0-ba47-0d9053632f1d")
+		)
+		(pin "7"
+			(uuid "17da302b-4a67-4cf1-8a62-623493a4ed47")
+		)
+		(pin "8"
+			(uuid "c461ba01-c50c-4966-a996-fa33cc3bae88")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 749.3 267.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3dc6472b-67c7-45e4-9799-6409a10a65a1")
+		(property "Reference" "PIOA/B2"
+			(at 754.38 267.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PIOA/B"
+			(at 763.27 267.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 749.3 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 749.3 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 749.3 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "22438f88-8cc9-433a-95b5-52326e674278")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "PIOA/B2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 372.11 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4957c8b2-d37a-4268-9f8c-09225526f079")
+		(property "Reference" "U9"
+			(at 386.08 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 386.08 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 346.71 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 365.76 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 372.11 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0aabc715-24e0-47e3-895f-af75da72e238")
+		)
+		(pin "2"
+			(uuid "3c5bcd87-5b48-4584-9d8e-a907369c8158")
+		)
+		(pin "3"
+			(uuid "7a159f95-fd37-4bef-a077-714e644e341b")
+		)
+		(pin "4"
+			(uuid "d79a3334-4487-4f7a-9741-168b217312e0")
+		)
+		(pin "5"
+			(uuid "ac82c810-5b2a-40ca-9a9d-867c3bb8455a")
+		)
+		(pin "6"
+			(uuid "e6cdadd3-8d1b-44f4-a03b-5cbc95e331ef")
+		)
+		(pin "7"
+			(uuid "32207d1e-06e1-46d2-ac53-73bb0eb5cc25")
+		)
+		(pin "8"
+			(uuid "ed551d86-3ed7-4033-9788-8a30e7f34eda")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 467.36 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a736032-6d13-4138-ad24-300803a8288e")
+		(property "Reference" "U12"
+			(at 481.33 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 481.33 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 441.96 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 461.01 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 467.36 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d838611-b240-4d47-8026-87fa26da24bf")
+		)
+		(pin "2"
+			(uuid "a39bf34a-871f-4886-b6cb-faa73d6a14cb")
+		)
+		(pin "3"
+			(uuid "738f010e-2550-4281-a484-5561efd0a170")
+		)
+		(pin "4"
+			(uuid "4145d082-5d28-4d10-96f1-ac507dffe328")
+		)
+		(pin "5"
+			(uuid "7b0872dd-ab73-49f0-bb99-4b87bce3702b")
+		)
+		(pin "6"
+			(uuid "55fd7381-e99a-4c08-9a4b-37172a522ca4")
+		)
+		(pin "7"
+			(uuid "3fc7128e-c441-4f8c-a0e4-b4557cc59345")
+		)
+		(pin "8"
+			(uuid "2dc72c2c-6dc0-4e24-a30a-4d1c733e86b2")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 245.11 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f49bbd9-3230-4fe1-bed2-0beaba24acdb")
+		(property "Reference" "U5"
+			(at 259.08 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 259.08 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 219.71 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 238.76 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 245.11 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6e716654-5c18-488d-b62d-288a88640d3e")
+		)
+		(pin "2"
+			(uuid "1bd81e44-c264-4e35-aaad-aaa9b13abd43")
+		)
+		(pin "3"
+			(uuid "2cb52c87-45bb-4cd2-9ffe-0c7ea72f92b5")
+		)
+		(pin "4"
+			(uuid "c6c465bc-5f35-4ea4-8c64-8b748d8ae92f")
+		)
+		(pin "5"
+			(uuid "f870738f-994c-47b5-87de-b5ed886e3387")
+		)
+		(pin "6"
+			(uuid "2b08d78d-b703-4b04-90f0-f6582c038b36")
+		)
+		(pin "7"
+			(uuid "e02034b4-29ba-482c-b37c-d5eb9a54c569")
+		)
+		(pin "8"
+			(uuid "b48b04a2-6c28-4893-83e0-93981ba69b38")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 749.3 265.43 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "703f15d5-9488-499a-b4d5-a93f084cef09")
+		(property "Reference" "Data2"
+			(at 754.38 265.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Data"
+			(at 760.73 265.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 749.3 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 749.3 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 749.3 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8606c43-c1dd-42e0-b693-56c9b440d418")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "Data2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 749.3 270.51 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "710d0eed-8e06-4609-b108-c18091faee1d")
+		(property "Reference" "GND2"
+			(at 754.38 270.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 760.73 270.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 749.3 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 749.3 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 749.3 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd5f3013-91e1-40bc-9e1d-4db8918ab258")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "GND2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 530.86 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73110a90-2fc3-4b3d-8074-a8e724a67dc9")
+		(property "Reference" "U14"
+			(at 544.83 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 544.83 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 505.46 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 524.51 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 530.86 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "690bccdf-bf25-4f42-ae27-b8446c00acc8")
+		)
+		(pin "2"
+			(uuid "8dbb2254-6866-4094-a8e5-3c0182ab0990")
+		)
+		(pin "3"
+			(uuid "b6fea72c-1884-4358-99cf-2fcadf5029f7")
+		)
+		(pin "4"
+			(uuid "47bb33d1-6a2a-41d2-9bcf-315a1b41ade2")
+		)
+		(pin "5"
+			(uuid "8edb6f65-bf6b-4872-8d0f-1b3994a2f159")
+		)
+		(pin "6"
+			(uuid "b8b08193-e29a-4bc0-bf6e-9c4048fdd07b")
+		)
+		(pin "7"
+			(uuid "21a1d355-fec2-4443-be30-3cb1e5539661")
+		)
+		(pin "8"
+			(uuid "c0a0fd87-9d83-46f7-96a9-3470e62ccfdf")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 435.61 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a967e9e-1f03-440b-a9d0-bc23ea551306")
+		(property "Reference" "U11"
+			(at 449.58 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 449.58 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 410.21 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 429.26 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 435.61 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "727489e2-a24d-4848-b85e-2c7bdfaf7ac4")
+		)
+		(pin "2"
+			(uuid "fcfdd591-95dd-4162-b6e0-6f2d25995ca4")
+		)
+		(pin "3"
+			(uuid "a3f22486-1b35-4049-94da-2ae9f57e9b1b")
+		)
+		(pin "4"
+			(uuid "382cfce9-3a1f-417b-89f8-3094a0c20d79")
+		)
+		(pin "5"
+			(uuid "5f69cf1b-403a-45d2-8b10-672b52128ae5")
+		)
+		(pin "6"
+			(uuid "38d51478-999f-4498-bee9-fe24bc457cef")
+		)
+		(pin "7"
+			(uuid "1a322083-1a56-4dd5-ad6f-dd96df3ad0b8")
+		)
+		(pin "8"
+			(uuid "dd0c8ca2-f91c-4de5-a25a-3e4eb2115d2f")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 213.36 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a36d8da-b8ad-448b-aaf5-b6e16a27933e")
+		(property "Reference" "U4"
+			(at 227.33 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 227.33 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 187.96 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 207.01 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b515f077-b404-49c3-bb53-442d01184b3d")
+		)
+		(pin "2"
+			(uuid "17bb21f6-8670-47c0-b2fa-19fd99b2e22a")
+		)
+		(pin "3"
+			(uuid "6cc17fb4-b3c7-4a93-9784-76bb95874bae")
+		)
+		(pin "4"
+			(uuid "a2b8c7e1-f30f-459a-b99d-260971418547")
+		)
+		(pin "5"
+			(uuid "44c552d3-5941-47fb-b957-cf115c84b0ef")
+		)
+		(pin "6"
+			(uuid "448a99f7-c28e-4220-94d5-35d200e8df77")
+		)
+		(pin "7"
+			(uuid "0cca84e1-38d9-4698-9a5d-859d1b5fecb2")
+		)
+		(pin "8"
+			(uuid "428b56b3-4a13-43be-8cf8-838fa3ef271d")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 689.61 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a984ca0-a519-469d-858c-8b387ea7db66")
+		(property "Reference" "U19"
+			(at 703.58 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 703.58 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 664.21 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 683.26 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 689.61 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf28d141-249c-4f66-94cb-8415b998629e")
+		)
+		(pin "2"
+			(uuid "953b4a9a-289c-48f1-ac51-6ccff5548230")
+		)
+		(pin "3"
+			(uuid "a3c02a0a-ccd6-4e7e-8e35-562454ec23a3")
+		)
+		(pin "4"
+			(uuid "3828035f-d276-434e-9af1-9a7bde919fb6")
+		)
+		(pin "5"
+			(uuid "ebbd2607-eb42-4e8f-92c9-5aaa99d41416")
+		)
+		(pin "6"
+			(uuid "fad93e42-601d-42ac-bbe9-e42c0a5d57ea")
+		)
+		(pin "7"
+			(uuid "cbe04e07-8d6b-41e7-9d12-a09c489995c5")
+		)
+		(pin "8"
+			(uuid "1278a221-178b-4f54-9c42-fea26e80688f")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 267.97 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8aab3029-10fb-4dfa-bb5f-d8b775133c52")
+		(property "Reference" "PIOA/B1"
+			(at 33.02 267.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PIOA/B"
+			(at 40.64 267.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 50.8 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe52df7b-b5db-49e6-a1e8-3f75faca0e83")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "PIOA/B1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 741.68 279.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9439229a-b4c5-47aa-9d26-c6e9b332bd8d")
+		(property "Reference" "TP6"
+			(at 736.6 281.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 736.6 284.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 746.76 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 746.76 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 741.68 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0648cc68-9d12-4bb0-baf6-09b217f12c67")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 499.11 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0701e4f-ef18-417f-b018-d882533895ac")
+		(property "Reference" "U13"
+			(at 513.08 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 513.08 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 473.71 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 492.76 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "270df469-57f5-441b-b190-50e4e25278ca")
+		)
+		(pin "2"
+			(uuid "ed8edcdc-6c32-43cb-8c7c-1de3c60100d8")
+		)
+		(pin "3"
+			(uuid "360bb01f-0e0a-420e-b4e0-5260f3e14659")
+		)
+		(pin "4"
+			(uuid "9e27ad12-e64e-42a3-b1af-113e3fcc6de3")
+		)
+		(pin "5"
+			(uuid "14eea3da-ea52-4304-916a-c7ff596e0698")
+		)
+		(pin "6"
+			(uuid "19adec67-1e74-48df-910e-3b1ad4641c53")
+		)
+		(pin "7"
+			(uuid "1351c213-e2c5-4411-9f0f-0fbee0bac0d5")
+		)
+		(pin "8"
+			(uuid "bd90be62-1dc4-4662-a46f-79965b20f09e")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 562.61 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4b4684b-22d0-4a6d-b77e-9faed49c01ff")
+		(property "Reference" "U15"
+			(at 576.58 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 576.58 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 537.21 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 556.26 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 562.61 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a9fed81-d9a4-4d49-b63e-c4cdcd491aa7")
+		)
+		(pin "2"
+			(uuid "7c6cdd52-945e-4ae7-b6f4-3e4aacac58c9")
+		)
+		(pin "3"
+			(uuid "59fb8355-af28-4fc2-9fe3-f55cd6aa2380")
+		)
+		(pin "4"
+			(uuid "bc92e4c8-39ce-4cac-b3f8-c5fb8a69a759")
+		)
+		(pin "5"
+			(uuid "4aa4411f-599c-41c0-8791-8e2936790787")
+		)
+		(pin "6"
+			(uuid "e072b721-a5a4-43b9-a74b-79abd6962660")
+		)
+		(pin "7"
+			(uuid "e795222b-2ee6-419b-84a4-e9b3175ad3a3")
+		)
+		(pin "8"
+			(uuid "93da419e-c509-491c-83df-f6bb125b7fe6")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 749.3 262.89 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6b4d8c4-633e-4fdc-83ac-fe914b561695")
+		(property "Reference" "VDD2"
+			(at 754.38 262.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VDD"
+			(at 760.73 262.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 749.3 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 749.3 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 749.3 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "29847374-4bb5-4dc3-a3a4-d543d48ba465")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "VDD2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 262.89 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad3bbf27-9018-46af-adc4-c54a75b04f88")
+		(property "Reference" "VDD1"
+			(at 34.29 262.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 40.64 262.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 50.8 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "671d99ee-7500-4176-b36f-affd20c69442")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "VDD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 740.41 267.97 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5cc9ae9-0dcf-453b-aa28-26c88e72094e")
+		(property "Reference" "TP8"
+			(at 734.568 271.272 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PIOA/B"
+			(at 734.568 273.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 735.33 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 735.33 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 740.41 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d7926afa-39eb-4bd7-bd6c-f5939e5ad097")
+		)
+		(instances
+			(project "open-string"
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 111.76 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb82eef8-c605-430b-b6fb-24b3e5f4634a")
+		(property "Reference" "U1"
+			(at 125.73 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 125.73 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 86.36 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 105.41 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1fe4640-00b6-4754-be65-df99197c0591")
+		)
+		(pin "2"
+			(uuid "2423f0e8-cb34-4395-977d-7d87860898c1")
+		)
+		(pin "3"
+			(uuid "5acd9626-bcde-4037-816a-6e67884c3dfa")
+		)
+		(pin "4"
+			(uuid "976e712b-66b0-44fe-972f-1e4d7db07890")
+		)
+		(pin "5"
+			(uuid "9c089930-544a-48c2-9554-dd25a4d66281")
+		)
+		(pin "6"
+			(uuid "9a9ac860-9027-4b6e-a90b-6ca017eb122a")
+		)
+		(pin "7"
+			(uuid "d865e2c4-4e62-40c7-b49c-3d1b9b8c08f5")
+		)
+		(pin "8"
+			(uuid "7da2eba1-b54b-439e-bdae-5139a3d1bc6d")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 594.36 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd3b074d-fe8e-4f79-a8c2-656a67daec43")
+		(property "Reference" "U16"
+			(at 608.33 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 608.33 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 568.96 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 588.01 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 594.36 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4dded15-5355-4408-8d3a-c80c6005cfa7")
+		)
+		(pin "2"
+			(uuid "e02825d9-f72d-4150-8a39-437044de75af")
+		)
+		(pin "3"
+			(uuid "8ee2b21f-e58a-4bc7-9ffc-c9b3a156b8d7")
+		)
+		(pin "4"
+			(uuid "85898578-50a2-4420-b0f8-a2fd22b8102c")
+		)
+		(pin "5"
+			(uuid "3e583d22-c08a-4d2d-9f3b-b1e66826ad71")
+		)
+		(pin "6"
+			(uuid "62cd9a52-c8b7-483f-9488-aaec222bc762")
+		)
+		(pin "7"
+			(uuid "7d56463b-e157-4b31-bca8-cb8d5df3438f")
+		)
+		(pin "8"
+			(uuid "30c66667-b739-4d1a-8ff4-05c36d34e246")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 73.66 254 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be7a37be-23e8-480f-9a74-0b72bb47faed")
+		(property "Reference" "TP3"
+			(at 76.2 256.0319 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "VDD"
+			(at 76.2 258.5719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 68.58 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d0081ff-dabc-4501-a203-731052161c20")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 721.36 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca443f38-6b37-4c04-9ffb-c19b19c0c51d")
+		(property "Reference" "U20"
+			(at 735.33 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 735.33 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 695.96 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 715.01 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 721.36 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eabd6352-6729-438d-8efe-d58064108e5e")
+		)
+		(pin "2"
+			(uuid "b8995371-1411-40e5-86ff-1f226258ea89")
+		)
+		(pin "3"
+			(uuid "621a237e-e8aa-4a6c-87a7-d9f1495445fb")
+		)
+		(pin "4"
+			(uuid "f9df1c6a-46d1-4be7-9807-a47dc94e698b")
+		)
+		(pin "5"
+			(uuid "e03f4983-edb4-44cb-b121-4b93f04649d2")
+		)
+		(pin "6"
+			(uuid "4535d21f-d00b-41f1-a54f-99f8959f699f")
+		)
+		(pin "7"
+			(uuid "08ad545b-05b2-4dbe-8ab9-50994fb50ffa")
+		)
+		(pin "8"
+			(uuid "52f3c8cf-170b-49b7-b209-27222430a6f8")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 276.86 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d19e51ab-949b-4db5-9a3d-3514e94e2d14")
+		(property "Reference" "U6"
+			(at 290.83 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 290.83 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 251.46 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 270.51 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 276.86 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce9fa8f1-332d-42b5-8bb6-930598a9618b")
+		)
+		(pin "2"
+			(uuid "f3ee1281-d4af-4a8b-ae9c-e093d89635dc")
+		)
+		(pin "3"
+			(uuid "50d4c581-e740-4b1d-9dcf-c7aab9cd75d5")
+		)
+		(pin "4"
+			(uuid "865f0336-dfd2-4668-8828-3366d00f8628")
+		)
+		(pin "5"
+			(uuid "ac6c121c-73fc-4f78-970c-16011f6185c8")
+		)
+		(pin "6"
+			(uuid "8c196c3e-0b6c-428f-acd3-754897222c5f")
+		)
+		(pin "7"
+			(uuid "6beeffb2-7519-497e-a1aa-ed44fc7587ec")
+		)
+		(pin "8"
+			(uuid "e0b1b9c0-039e-483c-bba0-e16c36b38dd6")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 745.49 254 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d29ed558-dd7f-40f2-8695-d87978c0ec73")
+		(property "Reference" "TP7"
+			(at 750.57 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "VDD"
+			(at 750.57 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 740.41 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 740.41 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 745.49 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04229bb3-42de-44fb-916c-23eaf07d8dd9")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 265.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7255915-9017-4cc6-b7d7-cce8055e9e11")
+		(property "Reference" "Data1"
+			(at 34.29 265.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Data"
+			(at 40.64 265.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
+			(at 50.8 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b5d8c91-baff-4192-8111-c7caa35f34ff")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "Data1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 741.68 257.81 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e648b8ee-7be4-4dd8-bf64-6053784e308f")
+		(property "Reference" "TP5"
+			(at 735.33 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Data"
+			(at 735.33 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 736.6 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 736.6 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 741.68 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "027b53ed-4ff5-44e1-b604-41d834f6b5cb")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 181.61 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f298028f-cb68-4122-8604-00125916ca69")
+		(property "Reference" "U3"
+			(at 195.58 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 195.58 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 156.21 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 175.26 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b5dcc1a1-7bb9-4f05-ba6a-d1c7ae726ad8")
+		)
+		(pin "2"
+			(uuid "de0f598c-4c04-464a-bb3a-31f24d6c226c")
+		)
+		(pin "3"
+			(uuid "c06d5d49-7f40-4fca-ba18-7e82df36a494")
+		)
+		(pin "4"
+			(uuid "6b91bca2-5b1d-4083-a59e-4c2745fb56f2")
+		)
+		(pin "5"
+			(uuid "86ab549d-3f30-4213-ac3b-492191b7ac21")
+		)
+		(pin "6"
+			(uuid "c458fbb7-0928-4ef3-804a-dbdb66055759")
+		)
+		(pin "7"
+			(uuid "c711a1e1-233d-442e-958e-4b010bd4621d")
+		)
+		(pin "8"
+			(uuid "13de0f62-1edd-44b6-94af-1aea65e3c5cd")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 143.51 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8a8fd1c-d824-4f29-8050-19d3d5fd6e05")
+		(property "Reference" "U2"
+			(at 157.48 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 157.48 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 118.11 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 137.16 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f00adcad-a082-43bc-a214-f20336bae11f")
+		)
+		(pin "2"
+			(uuid "e4d78562-976a-4c75-b263-135a8d7ba05c")
+		)
+		(pin "3"
+			(uuid "a58b3bd4-3958-4368-bfab-f0ba60722486")
+		)
+		(pin "4"
+			(uuid "f07b3c7e-ff7c-4ca4-b83b-d06833765333")
+		)
+		(pin "5"
+			(uuid "63222ffb-9f42-499c-8c00-eaa56a2bdaa8")
+		)
+		(pin "6"
+			(uuid "edbc8bd0-ce42-48aa-94a0-4189c2a9e785")
+		)
+		(pin "7"
+			(uuid "085c75f8-117e-4f52-87c3-3c216849a15c")
+		)
+		(pin "8"
+			(uuid "c88be456-516d-47d8-9d9f-8a2544a8a3b1")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 657.86 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd673800-41c2-4dc5-a59d-57a06cd0ad41")
+		(property "Reference" "U18"
+			(at 671.83 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 671.83 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 632.46 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 651.51 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 657.86 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8b488df-27be-442d-99c9-ada4ef63c6a3")
+		)
+		(pin "2"
+			(uuid "d732a60b-c237-40ec-93d0-4659870a91a7")
+		)
+		(pin "3"
+			(uuid "c7cc13fa-c265-4196-be3f-7506ff8a749b")
+		)
+		(pin "4"
+			(uuid "758bee31-37e5-4f2c-a0d9-479a2b5d113f")
+		)
+		(pin "5"
+			(uuid "c2b7a396-b095-4aa1-b095-0c2314861591")
+		)
+		(pin "6"
+			(uuid "4c88c419-5fe8-4196-9e97-72fb698c6525")
+		)
+		(pin "7"
+			(uuid "c7e09083-ace6-425e-95ab-ddbcdaeda2c7")
+		)
+		(pin "8"
+			(uuid "217736c4-cf3e-4431-9430-f0a8f10ff850")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS28EA00")
+		(at 340.36 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff6a1cc3-9357-4b5c-90d9-a47b1a0e19fa")
+		(property "Reference" "U8"
+			(at 354.33 264.9093 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DS28EA00"
+			(at 354.33 267.4493 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 314.96 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS28EA00.pdf"
+			(at 334.01 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 340.36 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc0269d6-4777-47eb-983f-211a9d9c383c")
+		)
+		(pin "2"
+			(uuid "9e566d24-282c-4e92-8eee-154b243009d2")
+		)
+		(pin "3"
+			(uuid "5c9ca8ce-39c3-44e4-907f-8360f489e619")
+		)
+		(pin "4"
+			(uuid "4e3d26f1-a23c-4ec3-bd86-ff2c8df634f8")
+		)
+		(pin "5"
+			(uuid "08c63d7c-8bb4-4537-b248-d301810bda18")
+		)
+		(pin "6"
+			(uuid "29b61d9d-9a45-407b-aa1c-7f19b577610d")
+		)
+		(pin "7"
+			(uuid "dcc78348-093f-4158-b87b-f8a2a90eb410")
+		)
+		(pin "8"
+			(uuid "f1a15d14-a7d2-4bbb-95db-eeacc5038283")
+		)
+		(instances
+			(project ""
+				(path "/9227536e-74eb-4bfc-a9a5-b920c748900d"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

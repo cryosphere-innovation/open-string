@@ -1,0 +1,48 @@
+---
+title: Firmware
+description: Flash and configure the OpenString microcontroller.
+---
+
+# Firmware
+
+OpenString firmware is an Arduino sketch. Source lives in
+[`firmware/open_string/`](https://github.com/cameronplanck/open-string/tree/main/firmware).
+
+## 1. Install the Arduino IDE
+
+Download from [arduino.cc](https://www.arduino.cc/en/software) — version
+2.x recommended. `arduino-cli` works too if you prefer the command line.
+
+## 2. Install the board package
+
+TODO — exact board manager URL and package name.
+
+## 3. Install libraries
+
+The required libraries are listed in `firmware/libraries.txt`. Install
+each through the Arduino Library Manager, or run:
+
+```bash
+arduino-cli lib install <library-name>
+```
+
+## 4. Open the sketch
+
+Open `firmware/open_string/open_string.ino` in the Arduino IDE.
+
+## 5. Configure
+
+Edit `config.h` to set:
+
+TODO — list of configurable options (number of sensors, sample interval,
+output format, etc.)
+
+## 6. Upload
+
+- Connect the OpenString to your computer via USB (or via programmer).
+- Select the correct board and port in the Arduino IDE.
+- Click Upload.
+
+## Troubleshooting
+
+TODO — common issues (port not found, fuse settings, bootloader, etc.)

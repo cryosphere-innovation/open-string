@@ -1,0 +1,30 @@
+OpenString is multi-licensed. Each part of the project is released under
+the license appropriate to its medium. All three licenses require
+attribution, permit commercial use, and require that derivative works
+remain open (share-alike / reciprocal).
+
+  Hardware designs (schematics, PCB layouts, mechanical CAD, Gerbers, BOM)
+    under /hardware/
+    License: CERN Open Hardware Licence Version 2 - Strong Reciprocal
+    SPDX-License-Identifier: CERN-OHL-S-2.0
+    Full text: LICENSES/CERN-OHL-S-2.0.txt
+
+  Firmware and software source code
+    under /firmware/
+    License: GNU General Public License v3.0
+    SPDX-License-Identifier: GPL-3.0-only
+    Full text: LICENSES/GPL-3.0.txt
+
+  Documentation, diagrams, and written content
+    under /docs/ and any README.md files
+    License: Creative Commons Attribution-ShareAlike 4.0 International
+    SPDX-License-Identifier: CC-BY-SA-4.0
+    Full text: LICENSES/CC-BY-SA-4.0.txt
+
+Copyright (c) 2026 The OpenString Authors.
+See AUTHORS.md for the list of contributors.
+
+Individual files should carry an SPDX-License-Identifier header that
+indicates which of the above licenses applies to that file. When in
+doubt, the license is determined by the directory the file lives in,
+per the mapping above.
