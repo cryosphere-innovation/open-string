@@ -22,3 +22,7 @@ _autosave-*
 .idea/
 *.swp
 .claude
+
+# Node
+node_modules/
+package-lock.json

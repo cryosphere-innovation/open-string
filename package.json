@@ -1,0 +1,10 @@
+{
+  "name": "open-string",
+  "private": true,
+  "scripts": {
+    "manifest": "node scripts/generate-manifest.js"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3"
+  }
+}

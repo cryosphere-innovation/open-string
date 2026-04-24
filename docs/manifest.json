@@ -1,0 +1,93 @@
+[
+  {
+    "filename": "assembly.mdx",
+    "slug": "open-string-assembly",
+    "title": "Assembly",
+    "type": "Doc",
+    "status": "Published",
+    "category": "Open Source",
+    "heading": "Build the OpenString — solder, splice, seal",
+    "published_date": "2026-04-24",
+    "updated_date": "",
+    "image": "",
+    "image_attribution": ""
+  },
+  {
+    "filename": "faq.mdx",
+    "slug": "open-string-faq",
+    "title": "FAQ",
+    "type": "Doc",
+    "status": "Published",
+    "category": "Open Source",
+    "heading": "Common questions about building and using OpenString",
+    "published_date": "2026-04-24",
+    "updated_date": "",
+    "image": "",
+    "image_attribution": ""
+  },
+  {
+    "filename": "firmware.mdx",
+    "slug": "open-string-firmware",
+    "title": "Firmware",
+    "type": "Doc",
+    "status": "Published",
+    "category": "Open Source",
+    "heading": "Flash and configure the OpenString microcontroller",
+    "published_date": "2026-04-24",
+    "updated_date": "",
+    "image": "",
+    "image_attribution": ""
+  },
+  {
+    "filename": "getting-started.mdx",
+    "slug": "open-string-getting-started",
+    "title": "Getting started",
+    "type": "Doc",
+    "status": "Published",
+    "category": "Open Source",
+    "heading": "What OpenString is, who it's for, and how to approach a build",
+    "published_date": "2026-04-24",
+    "updated_date": "",
+    "image": "",
+    "image_attribution": ""
+  },
+  {
+    "filename": "hardware.mdx",
+    "slug": "open-string-hardware",
+    "title": "Hardware reference",
+    "type": "Doc",
+    "status": "Published",
+    "category": "Open Source",
+    "heading": "Schematic walkthrough, specs, and design notes",
+    "published_date": "2026-04-24",
+    "updated_date": "",
+    "image": "",
+    "image_attribution": ""
+  },
+  {
+    "filename": "index.mdx",
+    "slug": "open-string-introduction",
+    "title": "OpenString",
+    "type": "Doc",
+    "status": "Published",
+    "category": "Open Source",
+    "heading": "The open-source temperature string for environmental monitoring",
+    "published_date": "2026-04-24",
+    "updated_date": "",
+    "image": "",
+    "image_attribution": ""
+  },
+  {
+    "filename": "ordering.mdx",
+    "slug": "open-string-ordering",
+    "title": "Ordering",
+    "type": "Doc",
+    "status": "Published",
+    "category": "Open Source",
+    "heading": "How to order the OpenString PCB, parts, and cable",
+    "published_date": "2026-04-24",
+    "updated_date": "",
+    "image": "",
+    "image_attribution": ""
+  }
+]
