@@ -12,16 +12,37 @@ image_attribution: ''
 ---
 
 OpenString is an open-source temperature string — a cable with temperature
-sensors distributed along its length, terminated in a microcontroller that
-logs and reports readings. Build one to monitor lake thermoclines, soil
-temperature profiles, greenhouse gradients, or any environment where you
-need temperature at several points along a line.
+sensors distributed along its length, terminated in a microcontroller
+that logs and reports readings. Use it to monitor lake thermoclines,
+soil profiles, greenhouse gradients, or any environment where you need
+temperature at multiple points along a line.
 
-Every piece you need is open:
+## Arctic-proven
+
+OpenString is the temperature string inside
+[SIMB3](/docs/simb3-introduction), Cryosphere Innovation's autonomous
+ice mass balance buoy. It has been in production for three years across
+roughly 40 Arctic and Antarctic deployments — a design that has already
+survived some of the harshest environments on Earth.
+
+## A template you can build on
+
+The hardware is a single **40 cm × 2 cm PCB** with temperature sensors
+spaced every 2 cm. Boards solder end-to-end, so you can chain them into
+a continuous span of any length — 40 cm, 4 m, 40 m — all at the same
+2 cm resolution.
+
+OpenString is a starting point, not a finished product. Use the design
+as-is, or fork and extend it: swap the sensor, re-spec the cable, modify
+the firmware, add whatever your deployment needs. Hardware, firmware,
+and docs are all open:
 
 - Hardware design files (CERN-OHL-S 2.0)
 - Arduino firmware (GPL-3.0)
 - This documentation (CC-BY-SA-4.0)
+
+All three licenses allow commercial use and are share-alike, so
+improvements flow back to the project.
 
 ## Start here
 
