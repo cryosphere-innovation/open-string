@@ -1,0 +1,36 @@
+name: Regenerate docs manifest
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**/*.mdx'
+      - 'scripts/generate-manifest.js'
+      - 'package.json'
+
+jobs:
+  manifest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so we can push back to main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --no-audit --no-fund
+      - run: node scripts/generate-manifest.js
+      - name: Commit manifest if changed
+        run: |
+          if [[ -n $(git status --porcelain docs/manifest.json) ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/manifest.json
+            git commit -m "Auto-regenerate docs/manifest.json"
+            git push
+          else
+            echo "Manifest unchanged — nothing to commit."
+          fi

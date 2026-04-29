@@ -25,3 +25,7 @@ _autosave-*
 # Claude Code
 .claude/
 CLAUDE.md
+
+# Node
+node_modules/
+package-lock.json
