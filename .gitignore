@@ -21,4 +21,7 @@ _autosave-*
 .vscode/
 .idea/
 *.swp
-.claude
+
+# Claude Code
+.claude/
+CLAUDE.md

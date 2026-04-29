@@ -1,8 +1,0 @@
-# OpenString firmware dependencies.
-#
-# Install with arduino-cli:
-#   arduino-cli lib install "OneWire"
-#
-# Or in the Arduino IDE: Sketch > Include Library > Manage Libraries.
-
-OneWire          # Paul Stoffregen, MIT. 1-Wire bus timing primitives.
