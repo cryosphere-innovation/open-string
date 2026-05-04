@@ -1,6 +1,6 @@
 ---
-title: Ordering
-slug: open-string-ordering
+title: Hardware & Fabrication
+slug: open-string-hardware-fabrication
 type: Doc
 status: Published
 category: Open Source
@@ -11,51 +11,47 @@ image: ''
 image_attribution: ''
 ---
 
-This page walks through ordering everything you need to build an
-OpenString from scratch.
+Ordering OpenString PCBs requires having a PCB fabrication house produce the boards from the provided design files, and sourcing the components for assembly. Below are guidelines and recommendations for both steps.
 
-## 1. PCB
+A complete set of fabrication files is provided at [`hardware/fabrication/gerbers/`](https://github.com/cryosphere-innovation/open-string/tree/main/hardware/fabrication/gerbers): Gerber files for all copper, soldermask, and silkscreen layers, edge cuts, drill files (PTH and NPTH), and a `.gbrjob` manifest. Most fab houses accept the folder as a zipped upload.
 
-Fabrication files live in [`hardware/gerbers/`](https://github.com/cryosphere-innovation/open-string/tree/main/hardware/gerbers).
+<Alert variant="success" className="my-6">
+  <AlertDescription>
+    If you'd rather skip fabrication and assembly, Cryosphere Innovation can supply ready-to-use OpenString boards. Email [cjp@cryosphereinnovation.com](mailto:cjp@cryosphereinnovation.com) for pricing and lead time.
+  </AlertDescription>
+</Alert>
 
-Recommended fab houses:
+## Fabrication Considerations
 
-- **JLCPCB** — cheapest for small runs, assembly available
-- **PCBWay** — similar pricing, good QA
-- **OSH Park** — US-based, higher quality, longer lead time
+### 40 cm length
 
-### Fab settings
+The OpenString PCB is 40 cm × 1.6 cm. That length sits at or beyond the maximum board dimension for most fabs' standard instant-quote tiers, so you may need to request a manual quote instead. Below you'll find two suppliers that have successfully produced OpenString PCBs: MacroFab and PCBWay. If ordering from another vendor, you'll want to confirm that they can accommodate the extended length.
+### Castellated edges
 
-TODO — fill in once the PCB is finalized:
+The PCB has castellated through-holes at both ends so boards can be soldered end-to-end into a continuous string. This is a feature you'll likely need to request explicitly. Most fabs support it but treat it as an extra-cost option.
 
-- Layer count
-- Board thickness
-- Copper weight
-- Surface finish
-- Min trace / space
-- Panelization notes
+### Recommended fab houses
+
+- **[MacroFab](https://www.macrofab.com/)** — US-based, full turnkey manufacturing and assembly. Best if you want a single vendor handling boards, parts sourcing, and pick-and-place.
+- **[PCBWay](https://www.pcbway.com/)** — China-based, fast and inexpensive for bare boards, with optional assembly service. Good default for prototype runs.
+
+
 
 ## 2. Bill of materials
 
-The canonical BOM is [`hardware/bom/bom.csv`](https://github.com/cryosphere-innovation/open-string/blob/main/hardware/bom/bom.csv).
+The canonical BOM used for PCBA is [`hardware/fabrication/bom.xlsx`](https://github.com/cryosphere-innovation/open-string/blob/main/hardware/fabrication/bom.xlsx). There is only one line item: the [DS28EA00 temperature sensor](https://www.analog.com/media/en/technical-documentation/data-sheets/ds28ea00.pdf). Each OpenString PCB requires 20 DS28EA00s, which are spaced at 2 cm intervals along the board.
 
-Most parts are available from Digi-Key, Mouser, and LCSC. A
-JLCPCB-ready CPL file is included for assembly-service orders.
+DS28EA00 chips are a cousin of the ubiquitous DS18B20, but with an extra GPIO that allows them to discover their position on a bus. This enables OpenString to read chips in a known order, enabling sequential temperature detection.
 
-## 3. Cable and connectors
+Most parts are available from Digi-Key, Mouser, Newark, or any other authorized vendor. 
 
-TODO — specify:
 
-- Cable type, conductor count, jacket
-- Length options
-- Connector / gland at the PCB end
-- Sensor-to-cable splice method
+## Other components
 
-## 4. Enclosure
+- Soldering equipment and basic electronic hand tools
+- Hook up wire
+- A computer with the Arduino IDE (and/or PlatformIO) installed
+- Sealing / potting supplies appropriate to your deployment
 
-TODO — specify enclosure part number, gland, and sealing approach.
-
-## Expected cost
-
-TODO — rough cost table once finalized, broken down by PCB, parts,
-cable, enclosure.
+Recommended:
+- An Arduino Uno or similar microcontroller for testing and development. In this example, we use an [Adafruit Feather M0](https://www.adafruit.com/product/3857)

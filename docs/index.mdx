@@ -11,42 +11,27 @@ image: ''
 image_attribution: ''
 ---
 
-OpenString is an open-source, arctic-hardened temperature string for environmental monitoring. Fork the whole design, or take just the PCB or firmware — it's been in production on [SIMB3](/docs/simb3-introduction) since 2023.
+OpenString is the world's first open-source temperature string for environmental monitoring. It consists of a PCB design, firmware package, and assembly guide to help you bring temperature profile monitoring into any project. 
 
-It consists of a Printed Circuit Board (PCB) with temperature sensors spaced every 2 cm, designed to be soldered end-to-end to create a continuous span of any length (within [practical limits](/docs/open-string-hardware)). In production on SIMB3, this design has survived roughly 40 Arctic and Antarctic deployments. The hardware, firmware, and documentation are all open-source, allowing for commercial use and modifications.
+Based on the production temperature string used by [SIMB3](/simb3), OpenString is an extensible, arctic-hardened design that can be used as-is or tailored to your specific application.
 
-## Arctic-proven    
 
-OpenString is the temperature string inside
-[SIMB3](/docs/simb3-introduction), Cryosphere Innovation's autonomous
-ice mass balance buoy. It has been in production for three years across
-roughly 40 Arctic and Antarctic deployments — a design that has already
-survived some of the harshest environments on Earth.
+![OpenString](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/open-string-1.png)
 
-## A template you can build on
 
-The hardware is a single **40 cm × 2 cm PCB** with temperature sensors
-spaced every 2 cm. Boards solder end-to-end, so you can chain them into
-a continuous span of any length — 40 cm, 4 m, 40 m — all at the same
-2 cm resolution.
+Along with this documentation, the [OpenString repository](https://github.com/cryosphere-innovation/open-string) contains the version-controlled design files for the hardware, firmware, and documentation. The [licenses](/docs/open-string-licenses) permit commercial use and adaptation, provided you preserve attribution and share modifications under the same terms.
 
-OpenString is a starting point, not a finished product. Use the design
-as-is, or fork and extend it: swap the sensor, re-spec the cable, modify
-the firmware, add whatever your deployment needs. Hardware, firmware,
-and docs are all open:
 
-- Hardware design files (CERN-OHL-S 2.0)
-- Arduino firmware (GPL-3.0)
-- This documentation (CC-BY-SA-4.0)
+## Getting Started
 
-All three licenses allow commercial use and are share-alike, so
-improvements flow back to the project.
+OpenString is designed to be accessible to anyone with basic electronics experience. It consists of three main components:
 
-## Start here
+1. **The PCB**: a 40 cm × 1.6 cm PCB populated with 20 temperature sensors at 2 cm spacing. The PCB has castellated edges at both ends so multiple boards can be soldered end-to-end into a continuous string of any length.
 
-- **[Getting started](/docs/open-string-getting-started)** — what OpenString is and who it's for
-- **[Ordering](/docs/open-string-ordering)** — order the PCB and parts
-- **[Assembly](/docs/open-string-assembly)** — build the string
-- **[Firmware](/docs/open-string-firmware)** — flash and configure the microcontroller
-- **[Hardware reference](/docs/open-string-hardware)** — schematic walkthrough and specs
-- **[FAQ](/docs/open-string-faq)**
+2. **Sample Firmware**: code that demonstrates how to interact with the hardware, including reading the sensor bus and logging the temperatures. The firmware provided is in Arduino, but can be adapted to any language you prefer.
+
+3. **Environmental packaging** — recommendations for sealing, potting, cabling, and packaging the string for your deployment. Hardening depends on your application, so we provide guidelines and examples rather than a one-size-fits-all solution.
+
+## Why Open-Source? 
+
+Temperature strings are hard. They are delicate, expensive, and temperamental. Over the years, we've developed a series of solutions for SIMB3 that have proven themselves in arctic conditions. Rather than gatekeep this knowledge, we've decided to share it with the community with the hope that it starts a conversation and moves the field forward.

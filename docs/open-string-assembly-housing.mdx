@@ -1,0 +1,62 @@
+---
+title: Prepare Housing
+slug: open-string-assembly-housing
+type: Doc
+status: Published
+category: Open Source
+heading: 'Build the string housing by cutting an extrusion to length and gluing the end caps in place.'
+published_date: '2026-04-29'
+updated_date: ''
+image: ''
+image_attribution: ''
+---
+
+<VideoPlayer muxPlaybackId="7Vm9aAMs4bnwoH6SGdciD5QP7HzqVplbV5UiwwTLiZE" />
+
+For most applications, OpenString PCBs will need to be secured in some kind of enclosure to protect them from the environment and allow physical mounting. 
+
+The approach described here is the one used for SIMB3 and uses a piece of extruded plastic with 3D-printed end caps. The extrusion cradles the PCBs so they can be potted with epoxy and sealed for weather-proof use.
+
+A DXF of the extrusion profile used for SIMB3 is [`available in the repository`](https://github.com/cryosphere-innovation/open-string/blob/main/hardware/solid-files/open-string-extrusion.DXF). You can use this file to source your own extrusion, or adapt the design to your needs. It is designed to be mounted externally using VHB tape to 4 inch diameter SCH 40 plumbing pipe.
+
+We've also provided solid files for the top and center end caps used to seal the extrusion for potting — see the parts list below.
+
+## Parts, Materials, and Tools Needed
+
+- [x] Plastic extrusion of desired length
+- [x] [`3D-printed top end cap`](https://github.com/cryosphere-innovation/open-string/blob/main/hardware/solid-files/open-string-top-end.stl)
+- [x] [`3D-printed center end cap`](https://github.com/cryosphere-innovation/open-string/blob/main/hardware/solid-files/open-string-center-end.stl) 
+- [x] Miter saw
+- [x] Thick super glue + accelerator
+- [x] Q-tips
+- [x] Safety glasses, nitrile gloves, and ear protection
+
+## Cut Extrusion to Length
+
+Cut or assemble the extrusion to your target length. For reference: SIMB3 uses **78.5 inches**, which fits four PCBs (an 80-sensor string).
+
+## Add the Top End Cap
+
+Spread a layer of super glue into the recesses of the top end cap and slide it onto one end of the extrusion. Coat the corners thoroughly — that's where potting compound is most likely to leak out later.
+
+![Top end glued and set](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/7.jpeg "Left: top end cap freshly prepared with super glue. Right: top end cap fully set and bonded to the extrusion.")
+
+## Add the Center End Cap
+
+Repeat for the center end cap. If glue pools at the bottom, remove or spread the excess with a Q-tip.
+
+![Center end glue cleanup](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/6.jpeg "Note the buildup of super glue in the left picture. It must be removed or spread out so it doesn't interfere with seating the PCBs.")
+
+## Seal the Backside
+
+Flip the housing and apply a thin layer of super glue with a Q-tip along the seam between the extrusion and each end cap. Seal all visible gaps. Reference the video for technique.
+
+![Backside seam sealed](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/8.jpeg "The layer should be thick enough to seal visible gaps but thin enough not to protrude past the back surface of the housing.")
+
+## Seal the Inner Side of the Top End
+
+Flip the housing upright and apply another thin layer of super glue along the inner side of the top end.
+
+![Inner top end sealed](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/9.jpeg)
+
+The housing is now ready for [board insertion and soldering](/docs/open-string-assembly-solder).

@@ -1,0 +1,46 @@
+---
+title: Licenses
+slug: open-string-licenses
+type: Doc
+status: Published
+category: Open Source
+heading: How OpenString is licensed and what that means for you
+published_date: '2026-04-24'
+updated_date: ''
+image: ''
+image_attribution: ''
+---
+
+OpenString is multi-licensed. Each component is released under the open-source standard for its kind — hardware under a hardware license, firmware under a code license, documentation under a creative-commons license.
+
+## License map
+
+| Component | License |
+|-----------|---------|
+| Hardware design files (schematic, PCB, Gerbers, BOM) | [CERN-OHL-S 2.0](https://cern-ohl.web.cern.ch/) |
+| Firmware (Arduino sketch and libraries) | [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.html) |
+| Documentation (everything under `docs/`) | [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+
+Full license texts live in [`LICENSES/`](https://github.com/cryosphere-innovation/open-string/tree/main/LICENSES) in the repository.
+
+## What you can do
+
+All three licenses allow:
+
+- **Commercial use** — build, sell, deploy, or integrate OpenString into a product.
+- **Modification** — redesign the PCB, fork the firmware, rewrite the docs.
+- **Redistribution** — share the original or your modified version.
+
+## What you must do
+
+If you distribute OpenString or a work derived from it:
+
+- **Preserve attribution.** Keep copyright notices and author credits intact.
+- **Release modifications under the same license** (share-alike). Changed firmware stays GPL-3.0, changed hardware stays CERN-OHL-S 2.0, changed docs stay CC-BY-SA-4.0.
+- **Pass the license through.** Your users get the same rights you did.
+
+Internal use alone does not require publication. The share-alike obligation triggers when you *distribute* a derivative work.
+
+## Contributing
+
+By opening a pull request, you agree to license your contribution under the license that applies to the directory you're contributing to.

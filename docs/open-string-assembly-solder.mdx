@@ -1,0 +1,87 @@
+---
+title: Solder Boards
+slug: open-string-assembly-solder
+type: Doc
+status: Published
+category: Open Source
+heading: 'Chain OpenString PCBs end-to-end and attach the 3-wire harness.'
+published_date: '2026-04-29'
+updated_date: ''
+image: ''
+image_attribution: ''
+---
+
+<VideoPlayer muxPlaybackId="VawEJmEZlZvd40089uD3V7Jfp5HgirQR00d500XuP48I7k" />
+
+## Parts, Materials, and Tools Needed
+
+- [x] OpenString PCBs (any number, depending on the string length you need)
+- [x] Housing (see [Prepare Housing](/docs/open-string-assembly-housing) for the SIMB3 example)
+- [x] 3-conductor harness cable
+- [x] Hookup wire
+- [x] Soldering station (iron, solder, wetted sponge, etc.)
+- [x] Box knife
+- [x] Safety glasses, nitrile gloves
+
+## Insert PCBs and Solder Together
+
+Place the OpenString PCBs into the housing in the order they will sit in the finished string. Pay attention to orientation: the **bottom** of one board connects to the **top** of the next.
+
+Connect the boards electrically by soldering each of the 4 castellated holes between adjacent boards. Reference the video for a visual guide.
+
+![Soldering castellated joints](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/12.jpeg "Each of the 4 castellated holes between adjacent boards should be soldered together to form a continuous measurement path.")
+
+Make sure each castellated hole is soldered thoroughly, but be careful not to overheat the joint.
+
+<Alert variant="success">
+  <AlertDescription>
+    When joining two boards, solder one castellated hole first. You can then reheat the joint to reposition the boards squarely before soldering the rest.
+  </AlertDescription>
+</Alert>
+
+## Prepare the Harness Cable
+
+The harness cable connects the string to your data logger or microcontroller.
+
+1. Cut a section of harness cable to your desired length. For SIMB3, we cut it to 28 inches. 
+2. Using a box knife, strip the outer insulation to leave an exposed section of insulated cable. The majority of the outer jacket should be removed.
+3. Cut away the **green** wire, leaving only the red, black, and white conductors.
+4. Strip the ends of the red, black, and white wires **1/4 inch**.
+5. Tin each end. Leave a small ball of solder — it makes connecting the harness to the PCB easier later.
+
+![Tinning harness wires](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/11.jpeg "When tinning the three wires, leave a nice ball of solder. It makes the next step easier.")
+
+## Insert Harness into Housing
+
+Gently insert the harness through the hole in the top end of the housing. Only the insulated section should be exposed outside the housing.
+
+## Solder the Harness to the Top PCB
+
+Solder the three wires to the top PCB:
+
+- **Red** → **VDD** castellated hole
+- **Black** → **GND1** castellated hole
+- **White** → **Data1** castellated hole
+
+### Ground PIOA/B on the Top PCB
+
+Using a stripped, tinned piece of hookup wire, connect the **PIOA/B** pad to the **GND1** pad on the top PCB. This is required for the chain's sequence-detection feature, which lets the firmware determine the position of each sensor at run-time.
+
+![Harness connected to top PCB with PIOA/B grounded](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/10.jpeg "Solder each of the three harness wires to the top PCB. Keep the wires flat and straight so they sit beneath the potting compound. For the PIOA/B → GND jumper, leaving a longer (1/2 inch) piece of hookup wire makes positioning easier.")
+
+## Super Glue the Harness Wires to the Housing
+
+1. Position the string and harness so the bottom edge of the first PCB is touching the bottom end of the housing. Place a dab of super glue on the bottom edge to hold it in place.
+
+   ![Bottom PCB seated against housing end](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/13.jpeg "If the bottom PCB isn't touching the bottom end piece, the 2 cm sensor spacing relative to the housing will be off.")
+
+2. Starting near the top PCB, group the harness wires together and place a dab of super glue. Use accelerator to speed setting.
+3. Repeat every 10 inches or wherever needed to keep the wires flat against the housing. Bulging wires will protrude through the potting compound.
+
+## Seal the Top End with Super Glue
+
+Apply a generous amount of super glue around the harness hole at the top end of the housing to seal it. Use accelerator to speed setting.
+
+![Top end sealed with super glue](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/14.jpeg "Sealing the harness hole prevents potting compound from leaking out during the next step.")
+
+The string is now ready for [potting](/docs/open-string-potting), then [mounting and validation](/docs/open-string-mount-validate).

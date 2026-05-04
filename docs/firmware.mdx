@@ -4,51 +4,97 @@ slug: open-string-firmware
 type: Doc
 status: Published
 category: Open Source
-heading: Flash and configure the OpenString microcontroller
+heading: 'Reference Arduino sketch for reading an OpenString chain.'
 published_date: '2026-04-24'
 updated_date: ''
 image: ''
 image_attribution: ''
 ---
 
-OpenString firmware is an Arduino sketch. Source lives in
-[`firmware/open_string/`](https://github.com/cryosphere-innovation/open-string/tree/main/firmware).
+The OpenString firmware is a single Arduino sketch that reads the DS28EA00 sensors in sequence and prints each reading over serial in physical cable order. It's designed as a starting point you can adapt into your own sketch or firmware.
 
-## 1. Install the Arduino IDE
+The source lives in [`firmware/src/open_string.ino`](https://github.com/cryosphere-innovation/open-string/blob/main/firmware/src/open_string.ino). It's heavily commented; if you're porting to another platform, the inline notes are the canonical reference.
 
-Download from [arduino.cc](https://www.arduino.cc/en/software) — version
-2.x recommended. `arduino-cli` works too if you prefer the command line.
+## What the Sketch Does
 
-## 2. Install the board package
+On boot, the sketch walks the chain in **chain mode**, which allows the firmware to discover each chip's 64-bit ROM address in physical cable order. Once discovered, the main loop kicks off a `Convert T` on every chip simultaneously, then reads each scratchpad in order and prints the temperature.
 
-TODO — exact board manager URL and package name.
+## Hardware Requirements
 
-## 3. Install libraries
+OpenString needs three things from the host microcontroller:
 
-The required libraries are listed in `firmware/libraries.txt`. Install
-each through the Arduino Library Manager, or run:
+- A **3.3 V GPIO** for the 1-Wire data line
+- A **3.3 V supply** and shared ground
+- A **4.7 kΩ pull-up resistor** between the data line and 3.3 V
+
+The 1-Wire protocol supports parasitic power, but we don't recommend it for OpenString — 20+ chips drawing simultaneously during `Convert T` produces inconsistent results. Use a dedicated 3.3 V supply from your board or external power supply.
+
+The sketch is verified on an Adafruit Feather M0 but should run on any Arduino-compatible board with a free GPIO.
+
+## Setup
+
+The firmware is set up as a [PlatformIO](https://platformio.org/) project (`platformio.ini` in the repo root), but the sketch also runs directly in the Arduino IDE if you prefer. Either path needs the same single dependency: the `OneWire` library.
+
+### Option A: PlatformIO (recommended)
+
+1. Install [PlatformIO](https://platformio.org/install) — the VS Code extension is the easiest path.
+2. Clone the repository and open the `open-string` folder.
+3. Build and upload:
 
 ```bash
-arduino-cli lib install <library-name>
+pio run -t upload
 ```
 
-## 4. Open the sketch
+PlatformIO reads `platformio.ini`, installs `OneWire` automatically, and flashes the configured board (default: `adafruit_feather_m0`). To target a different board, edit the `[env:...]` block in `platformio.ini` — see [PlatformIO's board list](https://docs.platformio.org/en/latest/boards/) for IDs.
 
-Open `firmware/open_string/open_string.ino` in the Arduino IDE.
+### Option B: Arduino IDE
 
-## 5. Configure
+1. Install the [Arduino IDE](https://www.arduino.cc/en/software) (2.x recommended).
+2. Install the board support package for your target (e.g. *Arduino SAMD Boards* for the Feather M0).
+3. Install the `OneWire` library via **Sketch → Include Library → Manage Libraries…**.
+4. Open `firmware/src/open_string.ino`, select your board and port, and click **Upload**.
 
-Edit `config.h` to set:
+## Configuration
 
-TODO — list of configurable options (number of sensors, sample interval,
-output format, etc.)
+The tunable constants live at the top of `open_string.ino`:
 
-## 6. Upload
+| Constant | Default | What it controls |
+|---|---|---|
+| `DATA_PIN` | `2` | GPIO connected to the 1-Wire data line |
+| `MAX_SENSORS` | `40` | Maximum sensors expected on one string (8 bytes of RAM each) |
+| `CONVERT_T_MS` | `750` | 12-bit Convert T worst case from the DS28EA00 datasheet |
+| `INTERVAL_MS` | `10000` | Time between completed read cycles |
 
-- Connect the OpenString to your computer via USB (or via programmer).
-- Select the correct board and port in the Arduino IDE.
-- Click Upload.
+For most uses, only `DATA_PIN` and `INTERVAL_MS` need touching.
 
-## Troubleshooting
+## Expected Output
 
-TODO — common issues (port not found, fuse settings, bootloader, etc.)
+After flashing, open the serial monitor at **115200 baud**. You should see something like:
+
+```
+=== OpenString firmware ===
+Data pin: D2
+
+Discovered 20 sensor(s) in physical cable order:
+  1: [42 11 22 33 44 55 66 AB]
+  2: [42 11 22 33 44 55 66 CD]
+  ...
+
+--- t=823 ms ---
+  1: 18.31 C
+  2: 18.00 C
+  3: 17.75 C
+  ...
+```
+
+If discovery returns 0 sensors, check the pull-up resistor and the harness wiring (red→VDD, black→GND, white→data).
+
+## Porting to Other Platforms
+
+The sketch is structured so the chain-mode discovery and per-chip read sequences map cleanly to any 1-Wire master. If you're moving to ESP-IDF, MicroPython, Zephyr, or a bare-metal driver, the byte sequences (`CHAIN ON`, `CONDITIONAL READ ROM`, `CHAIN DONE`, `Convert T`, `Match ROM`, `Read Scratchpad`) are the same — only the surrounding I/O changes. The inline comments in `open_string.ino` walk through the protocol step by step.
+
+<Alert variant="info">
+  <AlertDescription>
+    The firmware is intentionally minimal — no RTC, no SD logging, no power management. We leave those choices to your application. If you build something useful on top of it, contributions back to the repository are welcome.
+  </AlertDescription>
+</Alert>

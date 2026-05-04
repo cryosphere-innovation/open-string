@@ -1,0 +1,74 @@
+---
+title: Mount & Validate
+slug: open-string-mount-validate
+type: Doc
+status: Published
+category: Open Source
+heading: 'Verify PCB operation and add VHB tape for mounting.'
+published_date: '2026-04-29'
+updated_date: ''
+image: ''
+image_attribution: ''
+---
+
+<VideoPlayer muxPlaybackId="SYM8005plFTp02sOOkeVEXdt7NTrF4x9ULIsZz6GPrclQ" />
+
+It's important to run a final check on the string after potting to verify that all sensors are reporting correctly. Optionally and depending on your mounting needs, you can add 3M VHB tape to the back of the housing to allow for secure mounting without fasteners.
+
+## Parts, Materials, and Tools Needed
+
+- [x] Fully-cured string assemblies
+- [x] 3M Very-High Bond (VHB) double-sided tape (optional)
+- [x] Pliers (for excess epoxy cleanup)
+- [x] Alligator clips
+- [x] Arduino with [Firmware](/docs/open-string-firmware) flashed
+- [x] Computer with a serial terminal (Arduino IDE, etc.)
+
+## Validate Operation
+
+### Prepare the Assembly for Testing
+
+1. Strip the end of the harness ~1.5 inches to expose the wires. Clip away the outer insulation and shielding, and cut the green wire.
+2. Strip the red, black, and white wires 1/4 inch.
+3. Connect the string to the Arduino with alligator clips: red to 5V, black to GND, and white to your data GPIO.
+
+### Read the Sensors
+
+Open the serial terminal in your IDE. You may need to select a port — it will look like `/dev/cu.usbmodem1101` or similar.
+
+With the string connected, the program will cycle through readings from every sensor in the chain. Each reading should be between **15 and 25 °C** indoors. The example output below is from an 80-sensor (4-board) string:
+
+```ansi
+------------------ BEGINNING SCAN --------------------
+
+Number of DS28EA00 sensors detected: 80
+
+Converted Temperatures (deg C):
+Sensor 1: 18.31
+Sensor 2: 18.00
+Sensor 3: 17.75
+.
+.
+.
+Sensor 78: 20.94
+Sensor 79: 19.00
+Sensor 80: 23.25
+```
+
+If every sensor reports a sensible value, the string is ready for deployment. Label the assembly, set it aside, and repeat for the rest.
+
+
+## Prepare for Mounting (optional)
+
+### Scrape Off Excess Epoxy
+
+Inspect the backside of each string for any leaked epoxy. Snap off any blobs with pliers. Excess epoxy will keep the string from laying flat against the bonding surface and will prevent the tape from adhering.
+
+![Removing excess epoxy with pliers](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/18.jpeg "Epoxy commonly leaks at the corners of the housing ends. Snap any buildup off with pliers so the string lays flat against the bonding surface.")
+
+### Apply VHB Tape
+
+Run a strip of 3M VHB tape along the entire backside length of the housing. Press it down with a paper towel or soft cloth to ensure it's fully set and free of bubbles.
+
+![VHB tape applied along housing backside](https://raw.githubusercontent.com/cryosphere-innovation/open-string/main/docs/images/temperature-string/19.jpeg "VHB tape attaches the string to the bonding surface securely without fasteners that could compromise watertight integrity.")
+
