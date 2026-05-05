@@ -4,9 +4,13 @@
 <!-- Copyright (c) 2026 Cryosphere Innovation (a wholly owned subsidiary of JASCO Applied Sciences). -->
 <!-- Contact: Dr. Cameron Planck <cjp@cryosphereinnovation.com> -->
 
-OpenString is an open-source temperature string for environmental monitoring.
+OpenString is the world's first open-source temperature string for environmental monitoring. It consists of a PCB design, firmware package, and assembly guide to help you bring temperature profile monitoring into any project.
 
-Everything you need to build, flash, and deploy one is in this repo.
+![OpenString](./docs/images/open-string-1.png)
+
+Based on the production temperature string used by [SIMB3](https://cryosphereinnovation.com/simb3), OpenString is an extensible, arctic-hardened design that can be used as-is or tailored to your specific application. Everything you need to build, flash, and deploy one is in this repo.
+
+> **Don't want to build your own?** Cryosphere Innovation can supply ready-to-use, assembled OpenString boards. Email [cjp@cryosphereinnovation.com](mailto:cjp@cryosphereinnovation.com) for pricing and lead time.
 
 ## Repository layout
 
@@ -21,7 +25,7 @@ Everything you need to build, flash, and deploy one is in this repo.
 ## Build your own
 
 1. Read [`docs/ordering.mdx`](./docs/ordering.mdx) to order the PCB and parts.
-2. Follow [`docs/assembly.mdx`](./docs/assembly.mdx) to solder, pot, and seal the string.
+2. Follow [`docs/open-string-assembly.mdx`](./docs/open-string-assembly.mdx) for the multi-step assembly walkthrough (soldering, housing, potting, testing).
 3. Flash the firmware (see below, or [`docs/firmware.mdx`](./docs/firmware.mdx)).
 4. Deploy.
 
@@ -93,9 +97,9 @@ must remain open under the same license.
 
 The OpenString documentation lives at
 [cryosphereinnovation.com/docs](https://cryosphereinnovation.com/docs).
-That site fetches the MDX files in `docs/` directly from this repo at
-render time — pushes to `main` show up on the live site within a few
-minutes. No build, no submodule bump, no manual sync.
+The live site bakes the MDX files in `docs/` into its build output
+when it deploys, so changes here go live the next time the docs site
+rebuilds.
 
 `docs/manifest.json` is generated automatically by a GitHub Action
 (`.github/workflows/manifest.yml`) on every push that touches an MDX
