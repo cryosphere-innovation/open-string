@@ -78,19 +78,6 @@
     "image_attribution": ""
   },
   {
-    "filename": "open-string-testing.mdx",
-    "slug": "open-string-testing",
-    "title": "Testing & Mount",
-    "type": "Doc",
-    "status": "Published",
-    "category": "Open Source",
-    "heading": "Verify PCB operation and add VHB tape for mounting.",
-    "published_date": "2026-04-29",
-    "updated_date": "",
-    "image": "",
-    "image_attribution": ""
-  },
-  {
     "filename": "open-string-potting.mdx",
     "slug": "open-string-potting",
     "title": "Potting",
@@ -98,6 +85,19 @@
     "status": "Published",
     "category": "Open Source",
     "heading": "Prepare the work surface and seal the string with marine epoxy.",
+    "published_date": "2026-04-29",
+    "updated_date": "",
+    "image": "",
+    "image_attribution": ""
+  },
+  {
+    "filename": "open-string-testing.mdx",
+    "slug": "open-string-testing",
+    "title": "Testing & Mount",
+    "type": "Doc",
+    "status": "Published",
+    "category": "Open Source",
+    "heading": "Verify PCB operation and add VHB tape for mounting.",
     "published_date": "2026-04-29",
     "updated_date": "",
     "image": "",
