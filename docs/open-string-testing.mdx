@@ -17,7 +17,7 @@ After potting, the string should be tested to ensure the sensors are reporting c
 
 <Alert variant="success" className="my-6">
   <AlertDescription>
-    The testing step can and should be performed befor potting as well to verify electrical operation before sealing.
+    The testing step can and should be performed before potting as well to verify electrical operation before sealing.
   </AlertDescription>
 </Alert>
 
@@ -27,6 +27,7 @@ After potting, the string should be tested to ensure the sensors are reporting c
 - [x] 3M Very-High Bond (VHB) double-sided tape (optional)
 - [x] Pliers (for excess epoxy cleanup)
 - [x] Alligator clips
+- [x] **4.7 kΩ pull-up resistor** (required — see callout below)
 - [x] Arduino with [Firmware](/docs/open-string-firmware) flashed
 - [x] Computer with a serial terminal (Arduino IDE, etc.)
 
@@ -36,7 +37,14 @@ After potting, the string should be tested to ensure the sensors are reporting c
 
 1. Strip the end of the harness ~1.5 inches to expose the wires. Clip away the outer insulation and shielding, and cut the green wire.
 2. Strip the red, black, and white wires 1/4 inch.
-3. Connect the string to the Arduino with alligator clips: red to 5V, black to GND, and white to your data GPIO.
+3. Connect the string to the Arduino with alligator clips: red to 3.3V, black to GND, and white to your data GPIO. Note: the One-Wire protocol requires the data line to be pulled to the supply voltage. 
+
+<Alert variant="warning" className="my-6">
+  <AlertTitle>Pull-up resistor required</AlertTitle>
+  <AlertDescription>
+    The 1-Wire protocol requires a pull-up on the data line. In most cases a 4.7 kΩ resistor between the white (data) wire and the 3.3 V supply rail will work, but for long cable runs, you may need a stronger pull-up (e.g. 2.2 kΩ) to ensure the signal is clean.
+  </AlertDescription>
+</Alert>
 
 ### Read the Sensors
 
